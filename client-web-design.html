@@ -66,6 +66,11 @@ h2{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12}
 section{scroll-margin-top:96px}
 @media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.card:hover,.proj:hover,.proj-card:hover{transform:none}}
 
+
+/* premium pass 7 */
+#ppro{position:fixed;top:0;left:0;height:2.5px;width:0;z-index:99;
+ background:linear-gradient(90deg,#6d5cff,#c86bff,#5cd6ff);box-shadow:0 0 12px rgba(124,92,255,.55)}
+
 </style><!-- premium pass 5 -->
 
 <style>
@@ -107,6 +112,13 @@ document.querySelectorAll('.cwcard').forEach((c,i)=>{c.style.opacity=0;c.style.t
     els.forEach(function(e){io.observe(e)});
   } else { els.forEach(function(e){e.classList.add('in')}); }
 })();
+</script>
+
+
+<script>
+(function(){var b=document.createElement('div');b.id='ppro';document.body.appendChild(b);
+var u=function(){var h=document.documentElement;var p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);b.style.width=(p*100)+'%';};
+addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u();})();
 </script>
 
 </body></html>
