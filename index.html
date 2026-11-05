@@ -184,6 +184,17 @@ img{filter:saturate(1.03) contrast(1.02)}
 ::selection{background:rgba(37,99,235,.18)}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 </style>
+<style id="pp8">/* premium pass 8 */
+html{scroll-behavior:smooth}
+h1,h2{letter-spacing:-.02em}
+nav.glassy,.nav.glassy{backdrop-filter:blur(14px) saturate(160%);background:rgba(10,12,18,.55)}
+.pcard{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.pcard:hover{transform:translateY(-8px) scale(1.01)}
+.pimg img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.pcard:hover .pimg img{transform:scale(1.06)}
+.catlbl{letter-spacing:.14em}
+::selection{background:rgba(120,140,255,.35)}
+</style>
 </head>
 <body>
 <nav class="nav" id="top">
@@ -491,5 +502,8 @@ var u=function(){var h=document.documentElement;var p=h.scrollTop/((h.scrollHeig
 addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u();})();
 </script>
 
+<script id="pp8js">/* premium pass 8 */
+addEventListener('scroll',function(){document.querySelectorAll('nav,.nav,header').forEach(function(e){e.classList.toggle('glassy',window.scrollY>40)})},{passive:true});
+</script>
 </body>
 </html>
