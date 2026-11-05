@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Client Web Design - 35 Website Concepts | Hashmi Digital</title>
+<meta name="description" content="35 client website concepts by Hashmi Digital, one unique cover per project across commerce, booking, SaaS, portfolio and local business lanes.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;box-sizing:border-box}
+body{background:#0b0d16;color:#e8eaf2;font-family:'Inter',system-ui,sans-serif;line-height:1.6}
+a{color:#8ea0ff;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+nav.wrap{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;backdrop-filter:blur(14px) saturate(1.4);background:rgba(10,12,22,.72);border-bottom:1px solid rgba(255,255,255,.07)}
+nav .brand{font-family:'Sora',sans-serif;font-weight:800;font-size:18px;color:#fff}
+nav .cats{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav .cats a{color:#aab3d0}
+nav .cats a:hover{color:#fff}
+header.hero{padding:90px 0 50px;text-align:center}
+.kick{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#8ea0ff;margin-bottom:14px}
+h1{font-family:'Sora',sans-serif;font-size:clamp(34px,6vw,62px);line-height:1.08;letter-spacing:-.02em}
+h1 em{font-style:normal;background:linear-gradient(90deg,#8ea0ff,#ff8ac0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{max-width:640px;margin:18px auto 0;color:#aab3d0}
+.cwsec{padding:48px 0}
+.cwsechead{margin-bottom:26px}
+.cwkicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8ea0ff}
+.cwsechead h2{font-family:'Sora',sans-serif;font-size:26px;margin-top:6px}
+.cwsechead p{color:#8a93ad;font-size:14px}
+.cwgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.cwcard{border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s,box-shadow .45s}
+.cwcard:hover{transform:translateY(-6px);border-color:rgba(140,150,255,.45);box-shadow:0 24px 60px -20px rgba(80,90,255,.35)}
+.cwimg svg{display:block;width:100%;height:auto}
+.cwbody{padding:18px 20px 22px}
+.cwcat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8ea0ff;margin-bottom:6px}
+.cwbody h3{font-family:'Sora',sans-serif;font-size:19px;margin-bottom:6px}
+.cwbody p{color:#9aa2bd;font-size:14px}
+footer{padding:48px 0;text-align:center;color:#7d86a3;font-size:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:40px}
+footer a{color:#8ea0ff}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.cwimg{position:relative;overflow:hidden;aspect-ratio:16/10;}
+.cwimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+
+/* premium pass 5 */
+:root{--pp5-ease:cubic-bezier(.2,.7,.2,1)}
+html{scroll-behavior:smooth}
+::selection{background:rgba(124,92,255,.35);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:rgba(255,255,255,.03)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#7c5cff,#22d3ee);border-radius:8px}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2{font-family:'Sora','Inter',sans-serif;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.06}
+h2{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12}
+.eyebrow,.kicker{letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;font-weight:700}
+.navlinks a{position:relative;transition:color .25s var(--pp5-ease)}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:linear-gradient(90deg,#7c5cff,#22d3ee);transition:width .35s var(--pp5-ease)}
+.navlinks a:hover::after{width:100%}
+.card,.proj,.proj-card,.site-card,.work-card{transition:transform .5s var(--pp5-ease),box-shadow .5s var(--pp5-ease),border-color .4s ease;will-change:transform}
+.card:hover,.proj:hover,.proj-card:hover,.site-card:hover,.work-card:hover{transform:translateY(-7px);box-shadow:0 24px 60px -18px rgba(124,92,255,.35),0 0 0 1px rgba(124,92,255,.25)}
+.card img,.proj img,.proj-card img,.site-card img{transition:transform .7s var(--pp5-ease),filter .5s ease}
+.card:hover img,.proj:hover img,.proj-card:hover img,.site-card:hover img{transform:scale(1.055);filter:saturate(1.08)}
+.btn,.cta,button{position:relative;overflow:hidden;transition:transform .3s var(--pp5-ease),box-shadow .3s var(--pp5-ease)}
+.btn:hover,.cta:hover,button:hover{transform:translateY(-2px);box-shadow:0 14px 34px -10px rgba(124,92,255,.5)}
+.btn::before,.cta::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);transition:transform .8s var(--pp5-ease)}
+.btn:hover::before,.cta:hover::before{transform:translateX(120%)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--pp5-ease),transform .8s var(--pp5-ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.07s}.reveal.d2{transition-delay:.14s}.reveal.d3{transition-delay:.21s}.reveal.d4{transition-delay:.28s}.reveal.d5{transition-delay:.35s}
+section{scroll-margin-top:96px}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.card:hover,.proj:hover,.proj-card:hover{transform:none}}
+
+
+/* premium pass 7 */
+#ppro{position:fixed;top:0;left:0;height:2.5px;width:0;z-index:99;
+ background:linear-gradient(90deg,#6d5cff,#c86bff,#5cd6ff);box-shadow:0 0 12px rgba(124,92,255,.55)}
+
+</style><!-- premium pass 5 -->
+
+<style>
+/* premium pass 6: motion + depth */
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.cwcard{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s cubic-bezier(.2,.7,.2,1)}
+.cwcard:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(10,15,40,.18)}
+.cwimg{overflow:hidden;border-radius:16px}
+.cwimg img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.cwcard:hover .cwimg img{transform:scale(1.06)}
+.cwimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(8,12,28,.35) 100%);opacity:0;transition:opacity .45s ease;pointer-events:none}
+.cwcard:hover .cwimg::after{opacity:1}
+.cwsechead{letter-spacing:-.01em}
+@media (prefers-reduced-motion:reduce){.cwcard,.cwimg img{transition:none}}
+</style>
+<style id="pp8">/* premium pass 8 */
+html{scroll-behavior:smooth}
+h1,h2{letter-spacing:-.02em}
+nav.glassy,.nav.glassy{backdrop-filter:blur(14px) saturate(160%);background:rgba(10,12,18,.55)}
+.pcard{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.pcard:hover{transform:translateY(-8px) scale(1.01)}
+.pimg img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.pcard:hover .pimg img{transform:scale(1.06)}
+.catlbl{letter-spacing:.14em}
+::selection{background:rgba(120,140,255,.35)}
+</style>
+</head><body>
+<nav class="wrap"><span class="brand">Hashmi Digital</span><span class="cats"><a href="#cportfolio">Portfolio</a><a href="#ccommerce">Commerce</a><a href="#cbooking">Booking</a><a href="#cbusiness">Business</a><a href="#clocal">Local</a><a href="#crealestate">Real estate</a><a href="#csaas">SaaS</a><a href="#ceducation">Education</a></span></nav>
+<header class="hero"><div class="wrap">
+<p class="kick">Client Web Design</p>
+<h1>35 website concepts.<br><em>One unique cover each.</em></h1>
+<p class="sub">Every project below carries its own distinct cover art, no repeats: commerce, booking, SaaS, portfolio and local business lanes, each designed around how that client actually sells.</p>
+</div></header>
+<main class="wrap"><section class="cwsec" id="cportfolio"><div class="cwsechead"><span class="cwkicker">Portfolio</span><h2>Portfolio websites</h2><p>5 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="lumina-interiors.jpg" alt="Lumina Interiors website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Interior design studio</div><h3>Lumina Interiors</h3><p>Elegant serif layout with room galleries</p></div></article><article class="cwcard"><div class="cwimg"><img src="solstice-events.jpg" alt="Solstice Events website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Wedding planning studio</div><h3>Solstice Events</h3><p>Romantic editorial gallery with RSVP flow</p></div></article><article class="cwcard"><div class="cwimg"><img src="lumen-studio.jpg" alt="Lumen Studio website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Photography portfolio</div><h3>Lumen Studio</h3><p>Minimal fullscreen galleries with lightbox</p></div></article><article class="cwcard"><div class="cwimg"><img src="terra-landscapes.jpg" alt="Terra Landscapes website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Garden design studio</div><h3>Terra Landscapes</h3><p>Seasonal project grid with garden tours</p></div></article><article class="cwcard"><div class="cwimg"><img src="aria-interiors.jpg" alt="Aria Interiors website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Luxury staging</div><h3>Aria Interiors</h3><p>Before/after sliders with property stats</p></div></article></div></section><section class="cwsec" id="ccommerce"><div class="cwsechead"><span class="cwkicker">Commerce</span><h2>Commerce websites</h2><p>5 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="sahara-coffee-roasters.jpg" alt="Sahara Coffee Roasters website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Specialty coffee brand</div><h3>Sahara Coffee Roasters</h3><p>Warm product grid with roast profiles</p></div></article><article class="cwcard"><div class="cwimg"><img src="petal-stem.jpg" alt="Petal & Stem website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Florist online shop</div><h3>Petal & Stem</h3><p>Seasonal collections with soft pastel art</p></div></article><article class="cwcard"><div class="cwimg"><img src="fable-books.jpg" alt="Fable Books website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Indie bookstore</div><h3>Fable Books</h3><p>Cozy catalogue with author spotlights</p></div></article><article class="cwcard"><div class="cwimg"><img src="cocoa-rye.jpg" alt="Cocoa & Rye website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Artisan bakery</div><h3>Cocoa & Rye</h3><p>Menu-first layout with daily bakes feed</p></div></article><article class="cwcard"><div class="cwimg"><img src="willow-loom.jpg" alt="Willow & Loom website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Handmade textiles</div><h3>Willow & Loom</h3><p>Craft-story product pages with artisan bios</p></div></article></div></section><section class="cwsec" id="cbooking"><div class="cwsechead"><span class="cwkicker">Booking</span><h2>Booking websites</h2><p>5 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="medaxis-health.jpg" alt="MedAxis Health website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Clinic booking platform</div><h3>MedAxis Health</h3><p>Calm appointment flow with doctor profiles</p></div></article><article class="cwcard"><div class="cwimg"><img src="harbor-dental.jpg" alt="Harbor Dental website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Dental practice</div><h3>Harbor Dental</h3><p>Friendly booking flow with before/after cases</p></div></article><article class="cwcard"><div class="cwimg"><img src="bluewave-marine.jpg" alt="Bluewave Marine website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Yacht charter service</div><h3>Bluewave Marine</h3><p>Oceanic hero with charter calendar</p></div></article><article class="cwcard"><div class="cwimg"><img src="pulse-physio.jpg" alt="Pulse Physio website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Physiotherapy clinic</div><h3>Pulse Physio</h3><p>Rehab program pages with slot booking</p></div></article><article class="cwcard"><div class="cwimg"><img src="halo-med-spa.jpg" alt="Halo Med Spa website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Aesthetic clinic</div><h3>Halo Med Spa</h3><p>Glow-focused design with treatment gallery</p></div></article></div></section><section class="cwsec" id="cbusiness"><div class="cwsechead"><span class="cwkicker">Business</span><h2>Business websites</h2><p>6 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="vertex-law.jpg" alt="Vertex Law website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Corporate law firm</div><h3>Vertex Law</h3><p>Authority-first layout with case results</p></div></article><article class="cwcard"><div class="cwimg"><img src="atlas-freight.jpg" alt="Atlas Freight website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Logistics company</div><h3>Atlas Freight</h3><p>Route map hero with shipment tracker</p></div></article><article class="cwcard"><div class="cwimg"><img src="vantage-legal.jpg" alt="Vantage Legal website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Immigration law</div><h3>Vantage Legal</h3><p>Clear process steps with consult booking</p></div></article><article class="cwcard"><div class="cwimg"><img src="everline-builders.jpg" alt="Everline Builders website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Construction firm</div><h3>Everline Builders</h3><p>Project timeline with safety certifications</p></div></article><article class="cwcard"><div class="cwimg"><img src="bastion-security.jpg" alt="Bastion Security website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Corporate security</div><h3>Bastion Security</h3><p>Personnel trust layout with contact desk</p></div></article><article class="cwcard"><div class="cwimg"><img src="northstar-legal.jpg" alt="Northstar Legal website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Startup counsel</div><h3>Northstar Legal</h3><p>Flat-fee packages with founder FAQs</p></div></article></div></section><section class="cwsec" id="clocal"><div class="cwsechead"><span class="cwkicker">Local</span><h2>Local websites</h2><p>7 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="aurora-fitness.jpg" alt="Aurora Fitness website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Boutique gym memberships</div><h3>Aurora Fitness</h3><p>Bold class schedule with trainer cards</p></div></article><article class="cwcard"><div class="cwimg"><img src="peak-adventures.jpg" alt="Peak Adventures website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Trek and tour operator</div><h3>Peak Adventures</h3><p>Full-bleed trail photos with booking tiers</p></div></article><article class="cwcard"><div class="cwimg"><img src="kindred-care.jpg" alt="Kindred Care website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Eldercare services</div><h3>Kindred Care</h3><p>Warm trust-first layout with care plans</p></div></article><article class="cwcard"><div class="cwimg"><img src="orbit-coworking.jpg" alt="Orbit Coworking website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Coworking spaces</div><h3>Orbit Coworking</h3><p>Space galleries with membership tiers</p></div></article><article class="cwcard"><div class="cwimg"><img src="saffron-table.jpg" alt="Saffron Table website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Fine dining restaurant</div><h3>Saffron Table</h3><p>Menu-led design with reservation flow</p></div></article><article class="cwcard"><div class="cwimg"><img src="marigold-spa.jpg" alt="Marigold Spa website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Wellness and spa</div><h3>Marigold Spa</h3><p>Serene booking flow with treatment menus</p></div></article><article class="cwcard"><div class="cwimg"><img src="wander-wheels.jpg" alt="Wander Wheels website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Camper van rentals</div><h3>Wander Wheels</h3><p>Map-based fleet browser with rates</p></div></article></div></section><section class="cwsec" id="crealestate"><div class="cwsechead"><span class="cwkicker">Real estate</span><h2>Real estate websites</h2><p>1 concept in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="meridian-realty.jpg" alt="Meridian Realty website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Luxury real estate listings</div><h3>Meridian Realty</h3><p>Map-led listing grid with gallery tours</p></div></article></div></section><section class="cwsec" id="csaas"><div class="cwsechead"><span class="cwkicker">SaaS</span><h2>SaaS websites</h2><p>4 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="novadev-labs.jpg" alt="NovaDev Labs website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Software agency site</div><h3>NovaDev Labs</h3><p>Dark dev-studio aesthetic with project reels</p></div></article><article class="cwcard"><div class="cwimg"><img src="cirrus-analytics.jpg" alt="Cirrus Analytics website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Data consultancy</div><h3>Cirrus Analytics</h3><p>Dashboard-style landing with live charts</p></div></article><article class="cwcard"><div class="cwimg"><img src="hexa-cyber.jpg" alt="Hexa Cyber website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Security consulting</div><h3>Hexa Cyber</h3><p>Dark tech aesthetic with threat feeds</p></div></article><article class="cwcard"><div class="cwimg"><img src="quantify-risk.jpg" alt="Quantify Risk website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Insurance analytics</div><h3>Quantify Risk</h3><p>Comparison tables with plan finder</p></div></article></div></section><section class="cwsec" id="ceducation"><div class="cwsechead"><span class="cwkicker">Education</span><h2>Education websites</h2><p>2 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="zenith-tutoring.jpg" alt="Zenith Tutoring website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Exam prep academy</div><h3>Zenith Tutoring</h3><p>Course cards with results wall</p></div></article><article class="cwcard"><div class="cwimg"><img src="crest-academy.jpg" alt="Crest Academy website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">International school</div><h3>Crest Academy</h3><p>Campus tours with admission portal</p></div></article></div></section></main>
+<footer class="wrap">Client Web Design showcase, Hashmi Digital. <a href="index.html">Back to the main site</a></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.cwcard').forEach((c,i)=>{c.style.opacity=0;c.style.transform='translateY(24px)';c.style.transition=`opacity .7s ${Math.min(i%6,.5)}s ease,transform .7s ${Math.min(i%6,.5)}s ease`;io.observe(c)});
+</script>
+
+<script>
+/* premium pass 5 */
+(function(){
+  var sel='.card,.proj,.proj-card,.site-card,.work-card,section .grid>*,.stats>*,section>h2,section>.eyebrow,section>.kicker';
+  var els=[].slice.call(document.querySelectorAll(sel)).filter(function(e){return !e.classList.contains('reveal')});
+  els.forEach(function(e,i){e.classList.add('reveal');var d=(i%5);if(d)e.classList.add('d'+d);});
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  } else { els.forEach(function(e){e.classList.add('in')}); }
+})();
+</script>
+
+
+<script>
+(function(){var b=document.createElement('div');b.id='ppro';document.body.appendChild(b);
+var u=function(){var h=document.documentElement;var p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);b.style.width=(p*100)+'%';};
+addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u();})();
+</script>
+
+<script id="pp8js">/* premium pass 8 */
+addEventListener('scroll',function(){document.querySelectorAll('nav,.nav,header').forEach(function(e){e.classList.toggle('glassy',window.scrollY>40)})},{passive:true});
+</script>
+</body></html>
