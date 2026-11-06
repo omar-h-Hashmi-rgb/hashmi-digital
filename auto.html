@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Meridian Auto Works | Car Service & Repair, Al Quoz Dubai</title><meta name="description" content="Meridian Auto Works, Al Quoz Dubai. Dealer-level diagnostics, AC, brakes and detailing for Japanese, German and American cars, with live photo updates.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#e63946;--acc2:#f4a261;--dark:#14161a;--light:#f7f7f8;--ink:#22262c}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--ink);background:var(--light);line-height:1.6}
+h1,h2,h3,h4{font-family:Oswald:wght@500;600;700,serif;font-weight:700;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:rgba(10,14,20,.55);backdrop-filter:blur(14px)}
+nav .brand{font-family:Oswald:wght@500;600;700,serif;font-size:22px;font-weight:800;color:#fff;letter-spacing:.5px}
+nav .brand span{color:var(--acc)}
+nav .links{display:flex;gap:26px}nav .links a{color:#e8e8ea;font-size:14px;letter-spacing:.4px;transition:.2s}
+nav .links a:hover{color:var(--acc)}
+nav .btn{padding:9px 20px;font-size:13px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,10,16,.88) 20%,rgba(8,10,16,.45) 60%,rgba(8,10,16,.25))}
+.hero .wrap{position:relative;z-index:2;padding-top:80px}
+.kick{display:inline-block;letter-spacing:3px;font-size:12px;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);padding:7px 14px;border-radius:999px;margin-bottom:22px;background:rgba(0,0,0,.25)}
+.hero h1{font-size:clamp(38px,6vw,64px);max-width:640px;color:#fff}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.sub{margin:18px 0 30px;font-size:18px;max-width:520px;color:#d5d8de}
+.btn{display:inline-block;border-radius:999px;padding:14px 30px;font-weight:700;font-size:15px;transition:.2s;cursor:pointer;border:none}
+.btn.solid{background:var(--acc);color:#ffffff;box-shadow:0 8px 26px -8px var(--acc)}
+.btn.solid:hover{transform:translateY(-2px)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff;margin-left:12px}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.stats{display:flex;gap:44px;margin-top:46px;flex-wrap:wrap}
+.stat .num{font-family:Oswald:wght@500;600;700,serif;font-size:34px;font-weight:800;color:#fff}
+.stat .lbl{font-size:13px;color:#aab0ba;letter-spacing:.5px}
+.section{padding:88px 0}
+.sec-kick{color:var(--acc);letter-spacing:3px;font-size:12px;text-transform:uppercase;font-weight:700}
+.sec-t{font-size:clamp(28px,4vw,42px);margin:10px 0 12px}
+.sec-s{color:#5c6470;max-width:640px;font-size:16.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:46px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:18px;padding:30px 26px;transition:.25s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -22px rgba(10,14,20,.25);border-color:var(--acc)}
+.card .ic{font-size:30px;width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--acc) 14%,white);margin-bottom:16px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:#5c6470;font-size:14.5px}
+.price{margin-top:14px;font-weight:800;color:var(--acc);font-family:Oswald:wght@500;600;700,serif;font-size:16px}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.split .img{border-radius:20px;overflow:hidden;min-height:380px;background:linear-gradient(135deg,var(--dark),color-mix(in srgb,var(--acc) 55%,var(--dark)));display:flex;align-items:center;justify-content:center;font-size:90px}
+.steps{display:grid;gap:26px;margin-top:44px}
+.step{display:flex;gap:18px}
+.sn{flex:0 0 46px;height:46px;border-radius:50%;background:var(--acc);color:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:Oswald:wght@500;600;700,serif}
+.step h4{margin-bottom:4px}.step p{color:#5c6470;font-size:14.5px}
+.testi{background:#fff;border:1px solid #e8eaee;border-radius:18px;padding:26px}
+.stars{color:var(--acc);letter-spacing:2px;margin-bottom:10px}
+.testi p{font-size:15px;color:#3b414b}
+.who{margin-top:14px;display:flex;flex-direction:column}
+.who span{color:#8a919c;font-size:13px}
+.dark-band{background:var(--dark);color:#fff;border-radius:26px;padding:56px;margin-top:10px}
+.dark-band .sec-t{color:#fff}.dark-band .sec-s{color:#b7bdc7}
+.faq details{border-bottom:1px solid #e4e7ec;padding:18px 0}
+.faq summary{font-weight:700;cursor:pointer;font-size:16.5px}
+.faq p{margin-top:10px;color:#5c6470;font-size:15px}
+.contact-sec{background:linear-gradient(180deg,var(--light),color-mix(in srgb,var(--acc) 8%,var(--light)))}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cinfo{display:grid;gap:16px;margin:26px 0}
+.ci{display:flex;gap:14px;align-items:flex-start;font-size:15px}
+.ci-ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid #e5e8ec;display:flex;align-items:center;justify-content:center;flex:0 0 42px}
+.trust-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.trust{font-size:12.5px;border:1px solid #d8dce2;border-radius:999px;padding:6px 13px;color:#4a515c;background:#fff}
+.book{background:#fff;border-radius:22px;padding:34px;box-shadow:0 30px 60px -30px rgba(10,14,20,.35);border:1px solid #e8eaee}
+.book h3{margin-bottom:18px;font-size:22px}
+.book input,.book select,.book textarea{width:100%;padding:13px 15px;margin-bottom:12px;border:1px solid #dfe3e9;border-radius:12px;font-size:15px;font-family:inherit;background:#fbfcfe}
+.book input:focus,.book select:focus,.book textarea:focus{outline:2px solid var(--acc);border-color:transparent}
+#bok{padding:16px;border-radius:12px;background:color-mix(in srgb,var(--acc) 15%,white);font-weight:700}
+footer{background:var(--dark);color:#9aa2ad;padding:44px 0 26px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer .fbrand{font-family:Oswald:wght@500;600;700,serif;font-size:20px;color:#fff;font-weight:800}
+footer a:hover{color:var(--acc)}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.5);font-size:26px}
+.pbadge{position:absolute;top:14px;right:14px;background:var(--acc);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:5px 10px;border-radius:999px;text-transform:uppercase}
+@media(max-width:860px){.split,.grid2{grid-template-columns:1fr}nav .links{display:none}.hero h1{font-size:38px}.dark-band{padding:34px}}
+</style></head>
+<body>
+<nav><div class="brand">MERIDIAN<span>AUTO</span></div><div class="links"><a href="#services">Services</a><a href="#about">How it works</a><a href="#pricing">Prices</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div><a href="#contact" class="btn solid">Book now</a></nav>
+<header class="hero"><video autoplay muted loop playsinline src="auto-hero.mp4"></video><div class="veil"></div>
+  <div class="wrap"><span class="kick">Al Quoz · Free pickup & drop</span>
+  <h1>Your car, <em>sorted</em> without the dealer runaround</h1><p class="sub">Dealer-level diagnostics and repair in Al Quoz, with live photo updates while we work and fixed prices agreed before we start.</p>
+  <a href="#contact" class="btn solid">Book a service</a><a href="#services" class="btn ghost">See services</a>
+  <div class="stats"><div class="stat"><div class="num" data-c="9,800+">0</div><div class="lbl">Cars serviced</div></div><div class="stat"><div class="num" data-c="4.8★">0</div><div class="lbl">Google rating</div></div><div class="stat"><div class="num" data-c="24 hr">0</div><div class="lbl">Most jobs done in</div></div><div class="stat"><div class="num" data-c="12 mo">0</div><div class="lbl">Parts & labour warranty</div></div></div></div></header>
+<section id="services" class="section"><div class="wrap">
+  <span class="sec-kick">Services</span><h2 class="sec-t">Everything a car needs, done properly</h2><p class="sec-s">Computerised diagnostics for all major brands, licensed technicians, and genuine or OEM-equivalent parts, your choice, priced both ways.</p>
+  <div class="grid"><div class="card"><div class="ic">🛠️</div><h3>Major & minor service</h3><p>Full inspection with a 40-point report, oil and filters, and your approval before anything extra is touched.</p><div class="price">From AED 349</div></div><div class="card"><div class="ic">❄️</div><h3>AC repair & gas</h3><p>Complete AC diagnosis, compressor and evaporator work, with gas refill at the correct spec, not a guess.</p><div class="price">From AED 250</div></div><div class="card"><div class="ic">💻</div><h3>Diagnostics & electrical</h3><p>Factory-level scan tools for German and Japanese systems. We find the fault, not the part to replace first.</p><div class="price">From AED 200</div></div><div class="card"><div class="ic">🛑</div><h3>Brakes & suspension</h3><p>Pads, discs, shocks and bushings with alignment on a certified lift. Warranty on all fitted parts.</p><div class="price">From AED 380</div></div><div class="card"><div class="ic">🧽</div><h3>Detailing & paint protection</h3><p>Machine polish, ceramic coating and interior deep clean. Booked cars get a courtesy wash while waiting.</p><div class="price">From AED 450</div></div><div class="card"><div class="ic">📄</div><h3>Insurance & claims</h3><p>We handle accident claims, police reports and agency referrals so you don't spend a day on the phone.</p><div class="price">No extra charge</div></div></div></div></section>
+<section id="about" class="section" style="background:#fff"><div class="wrap split">
+  <div><span class="sec-kick">How it works</span><h2 class="sec-t">Fixed price before we touch the car</h2><p class="sec-s">Most workshops in this city quote you one number and call back with another. Not here. You approve a written quote with photos, we do the work, and you get progress photos as we go. Free pickup and drop anywhere in Dubai.</p>
+  <div class="steps"><div class="step"><div class="sn">1</div><div><h4>Book in 2 minutes</h4><p>WhatsApp or the form below. Tell us the car, the symptom and your area.</p></div></div><div class="step"><div class="sn">2</div><div><h4>Free pickup & diagnosis</h4><p>We collect the car, run diagnostics and send a written quote with photos.</p></div></div><div class="step"><div class="sn">3</div><div><h4>You approve, we work</h4><p>Nothing happens without your yes. Live photo updates while we work.</p></div></div><div class="step"><div class="sn">4</div><div><h4>Delivered & warranted</h4><p>Free drop-off, itemised invoice, 12-month warranty on parts and labour.</p></div></div></div></div>
+  <div class="img">🔧</div></div></section>
+<section id="reviews" class="section"><div class="wrap">
+  <span class="sec-kick">Customer stories</span><h2 class="sec-t">4.8 stars from 1,400+ reviews</h2><p class="sec-s">Verified reviews from Google and Trustpilot.</p>
+  <div class="grid"><div class="testi"><div class="stars">★★★★★</div><p>“Sent photos of my brake discs before replacing anything. Quote matched the invoice to the dirham. Rare in this city.”</p><div class="who"><strong>Rashid M.</strong><span>Google review</span></div></div><div class="testi"><div class="stars">★★★★★</div><p>“AC died in June. Picked up from my office in DIFC, fixed and returned same day for less than the dealer quoted.”</p><div class="who"><strong>Priya S.</strong><span>Google review</span></div></div><div class="testi"><div class="stars">★★★★★</div><p>“They found an electrical fault two other garages missed. Saved me from buying a new battery I didn't need.”</p><div class="who"><strong>Khalid A.</strong><span>Trustpilot</span></div></div></div></div></section>
+<section class="section"><div class="wrap"><div class="dark-band" id="pricing">
+  <span class="sec-kick">Transparent pricing</span><h2 class="sec-t">Honest pricing, printed</h2><p class="sec-s">Prices below are for most makes and models. German and premium vehicles quoted separately, in writing, before work starts.</p>
+  <div class="grid" style="margin-top:34px"><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><span class="pbadge">Most booked</span><h3 style="color:#fff">Minor service</h3><div class="price" style="font-size:26px">AED 349</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>Oil and filter change</li><li>40-point inspection</li><li>Fluid top-ups</li><li>Free wash and vacuum</li></ul></div><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><h3 style="color:#fff">Diagnostics</h3><div class="price" style="font-size:26px">AED 200</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>Full computer scan</li><li>Written fault report</li><li>Quote with photos</li><li>Fee waived if we do the repair</li></ul></div><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><h3 style="color:#fff">AC service</h3><div class="price" style="font-size:26px">AED 250</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>Full AC system test</li><li>Leak detection</li><li>Correct-spec gas refill</li><li>Cabin filter check</li></ul></div></div></div></div></section>
+<section id="faq" class="section" style="padding-top:20px"><div class="wrap split" style="align-items:flex-start">
+  <div><span class="sec-kick">Good to know</span><h2 class="sec-t">Questions, answered</h2><div class="faq"><details><summary>Do you use genuine parts?</summary><p>Your choice: genuine dealer parts or certified OEM-equivalent at roughly 40% less. Both carry our 12-month warranty and we show you both prices first.</p></details><details><summary>Is pickup and drop really free?</summary><p>Yes, anywhere in Dubai. Sharjah and Abu Dhabi arranged at a small fee, quoted up front.</p></details><details><summary>Can I watch the repair?</summary><p>You get live photo updates on WhatsApp at every stage. If you want to visit, our Al Quoz bays have a customer viewing area.</p></details><details><summary>How long does a major service take?</summary><p>Most are done same day. Jobs needing parts are typically 24 hours; we tell you at the quote stage, not after.</p></details></div></div>
+  <div class="img" style="min-height:300px">🚗</div></div></section>
+
+    <section id="contact" class="section contact-sec">
+      <div class="wrap grid2">
+        <div>
+          <h2 class="sec-t">Book your car in</h2>
+          <p class="sec-s">Tell us the car and the problem. You'll get a written quote with photos, usually the same day.</p>
+          <div class="cinfo">
+            <div class="ci"><span class="ci-ic">📍</span><div><strong>Visit</strong><br>Warehouse 14, Al Quoz Industrial 3, Dubai</div></div>
+            <div class="ci"><span class="ci-ic">📞</span><div><strong>Call</strong><br><a href="tel:+97145550947">+971 4 555 0947</a></div></div>
+            <div class="ci"><span class="ci-ic">✉️</span><div><strong>Email</strong><br><a href="mailto:service@meridianauto.ae">service@meridianauto.ae</a></div></div>
+            <div class="ci"><span class="ci-ic">🕒</span><div><strong>Hours</strong><br>Sat–Thu 8:00–19:00 · Fri 14:00–19:00</div></div>
+          </div>
+          <div class="trust-row">< s p a n   c l a s s = " t r u s t " > R T A - r e g i s t e r e d   w o r k s h o p < / s p a n > < s p a n   c l a s s = " t r u s t " > 1 2 - m o n t h   w a r r a n t y < / s p a n > < s p a n   c l a s s = " t r u s t " > F r e e   p i c k u p   i n   D u b a i < / s p a n > < s p a n   c l a s s = " t r u s t " > I n s u r a n c e   c l a i m s   h a n d l e d < / s p a n ></div>
+        </div>
+        <form class="book" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('bok').style.display='block';">
+          <h3>Request a quote</h3>
+          <input required placeholder="Full name"><input required type="tel" placeholder="Phone / WhatsApp"><input required placeholder="Car make, model and year"><select><option>Periodic service</option><option>AC repair</option><option>Diagnostics / warning light</option><option>Brakes / suspension</option><option>Detailing / ceramic</option><option>Insurance claim</option></select><textarea rows="2" placeholder="What is the car doing, or not doing?"></textarea>
+          <button class="btn solid" type="submit">Request quote</button>
+          <div id="bok" style="display:none">✅ Got it! We'll WhatsApp you a written quote with photos, usually the same day.</div>
+        </form>
+      </div>
+    </section>
+<footer><div class="wrap"><div><div class="fbrand">MERIDIAN<span>AUTO</span></div><p style="margin-top:8px;max-width:340px">Meridian Auto Works is an independent service centre in Al Quoz specialising in European, Japanese and American vehicles.</p></div>
+<div><strong style="color:#fff">Quick links</strong><br><a href="#services">Services</a><a href="#about">How it works</a><a href="#pricing">Prices</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+<div><strong style="color:#fff">Reach us</strong><br>Warehouse 14, Al Quoz Industrial 3, Dubai<br><a href="tel:+97145550947">+971 4 555 0947</a><br><a href="mailto:service@meridianauto.ae">service@meridianauto.ae</a></div></div>
+<div class="wrap" style="margin-top:26px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12.5px">© 2026 Meridian Auto Works. All rights reserved.</div></footer>
+<a class="wa" href="https://wa.me/97145550947" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;const c0=el.dataset.c;const m=c0.match(/^[\d.,]+/);const t=m?+m[0].replace(/,/g,''):0;const suf=m?c0.slice(m[0].length):'';let n=0;const st=Math.max(1,Math.round(t/40));const iv=setInterval(()=>{n+=st;if(n>=t){n=t;clearInterval(iv)}el.textContent=(t>=1000?Math.round(n).toLocaleString():(t%1?n.toFixed(1):Math.round(n)))+suf},24);io.unobserve(el)}}),{threshold:.4});document.querySelectorAll('.num').forEach(el=>io.observe(el));</script>
+</body></html>
