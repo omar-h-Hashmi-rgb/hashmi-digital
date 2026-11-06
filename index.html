@@ -1035,5 +1035,18 @@ section[id]{scroll-margin-top:84px}
 .work-card:hover,.project-card:hover{transform:translateY(-6px)}
 img{image-rendering:auto}
 </style>
+<style id="polish26e-css">
+/* polish 26e: nav underline slide, button shine sweep, image zoom, display type tightening */
+.nav a{position:relative}
+.nav a::after{content:"";position:absolute;left:0;bottom:-4px;width:100%;height:2px;background:currentColor;transform:scaleX(0);transform-origin:right;transition:transform .35s cubic-bezier(.22,1,.36,1);border-radius:2px}
+.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1);transform-origin:left}
+.btn,.cta,a[class*="btn"]{position:relative;overflow:hidden}
+.btn::after,.cta::after{content:"";position:absolute;top:0;left:-75%;width:50%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-20deg);transition:left .6s cubic-bezier(.22,1,.36,1);pointer-events:none}
+.btn:hover::after,.cta:hover::after{left:125%}
+.work-card img,.project-card img,.client-card img,.card img{transition:transform .6s cubic-bezier(.22,1,.36,1)}
+.work-card:hover img,.project-card:hover img,.client-card:hover img,.card:hover img{transform:scale(1.05)}
+@media (min-width:900px){h1{letter-spacing:-.045em}h2{letter-spacing:-.03em}}
+@media (prefers-reduced-motion:reduce){.nav a::after,.btn::after{transition:none}.work-card img,.project-card img,.client-card img,.card img{transition:none}}
+</style>
 </body>
 </html>
