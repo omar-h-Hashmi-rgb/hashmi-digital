@@ -1059,5 +1059,46 @@ footer a:hover{transform:translateX(4px);opacity:.92}
 section{position:relative}
 @media (prefers-reduced-motion:reduce){footer a{transition:none}}
 </style>
-</body>
+<style id="polish27">
+/* polish 27: fluid display type, refined micro-interactions, film grain */
+:root{
+  --f-display: clamp(2.6rem, 6.2vw, 5.6rem);
+  --f-h2: clamp(1.7rem, 3.4vw, 2.9rem);
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+}
+h1.display, .hero h1, section.hero h1{
+  font-size: var(--f-display) !important;
+  line-height: 1.02 !important;
+  letter-spacing: -0.035em !important;
+  text-wrap: balance !important;
+}
+h2{ font-size: var(--f-h2) !important; letter-spacing: -0.02em !important; text-wrap: balance !important; }
+::selection{ background: #4f7cff; color: #fff; }
+/* cinematic entrance for above-the-fold content */
+@keyframes p27-rise{ from{ opacity:0; transform: translateY(26px); } to{ opacity:1; transform:none; } }
+.hero h1, .hero .sub, .hero .cta-row, .hero .badge{
+  animation: p27-rise .9s var(--ease-out-expo) both;
+}
+.hero .sub{ animation-delay:.12s } .hero .cta-row{ animation-delay:.22s } .hero .badge{ animation-delay:.3s }
+/* magnetic hover on primary buttons */
+.btn-primary, a[class*="btn"]:first-of-type{ transition: transform .35s var(--ease-out-expo), box-shadow .35s var(--ease-out-expo); }
+.btn-primary:hover{ transform: translateY(-2px) scale(1.02); box-shadow: 0 18px 44px -14px rgba(79,124,255,.55); }
+/* nav breathing room */
+nav a, header a{ letter-spacing: .01em; transition: color .25s ease, opacity .25s ease; }
+nav a:hover{ opacity:.75; }
+/* subtle film grain overlay */
+body::after{
+  content:""; position:fixed; inset:0; z-index:1; pointer-events:none; opacity:.05;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+/* card edge glow on hover */
+.card, [class*="project-card"], [class*="work-item"]{
+  transition: transform .5s var(--ease-out-expo), border-color .4s ease, box-shadow .5s var(--ease-out-expo);
+}
+.card:hover, [class*="project-card"]:hover{ transform: translateY(-6px); box-shadow: 0 30px 70px -30px rgba(0,0,0,.55); border-color: rgba(255,255,255,.18); }
+@media (prefers-reduced-motion: reduce){
+  .hero h1, .hero .sub, .hero .cta-row, .hero .badge{ animation: none; }
+  .card:hover, [class*="project-card"]:hover, .btn-primary:hover{ transform:none; }
+}
+</style>\n</body>
 </html>
