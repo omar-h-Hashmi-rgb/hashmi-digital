@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Flour & Fig Bakery | Artisan Bread, Cakes & Fresh Bakes, Jumeirah Dubai</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Jost&display=swap" rel="stylesheet">
+<style>
+:root{--c:#c2410c;--d:#101418;--ink:#22282e;--mut:#66707a;--bg:#faf9f6;--accent:#e8a35c}
+*{margin:0;padding:0;box-sizing:border-box}html{scroll-behavior:smooth}
+body{font-family:'Jost',sans-serif;color:var(--ink);background:var(--bg);line-height:1.65}
+h1,h2,h3,.n{font-family:'Playfair+Display:wght@600;700',serif;font-weight:600;line-height:1.15}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);text-align:center;margin-bottom:.4em}
+.sub{text-align:center;color:var(--mut);max-width:640px;margin:0 auto 3rem}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1rem 5vw;background:rgba(16,20,24,.92);backdrop-filter:blur(10px)}
+nav .logo{font-family:'Playfair+Display:wght@600;700',serif;font-size:1.35rem;color:#fff;text-decoration:none;letter-spacing:.04em}
+nav .logo b{color:var(--accent)}
+nav .links{display:flex;gap:1.8rem}nav .links a{color:#cfd6dd;text-decoration:none;font-size:.92rem;transition:.2s}
+nav .links a:hover{color:var(--accent)}
+.nav-call{background:var(--accent);color:#fff;padding:.55rem 1.2rem;border-radius:999px;text-decoration:none;font-size:.9rem;font-weight:600}
+@media(max-width:820px){nav .links{display:none}}
+header{position:relative;min-height:92vh;display:flex;align-items:center;justify-content:center;text-align:center;color:#fff;overflow:hidden}
+header video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+header .veil{position:absolute;inset:0;background:linear-gradient(180deg,rgba(10,14,18,.55),rgba(10,14,18,.78))}
+.hero{position:relative;z-index:2;max-width:900px;padding:0 5vw}
+.hero .eyebrow{letter-spacing:.35em;text-transform:uppercase;font-size:.75rem;color:var(--accent);margin-bottom:1rem}
+.hero h1{font-size:clamp(2.4rem,6vw,4.2rem);margin-bottom:1rem}
+.hero p{color:#e4e8ec;font-size:1.1rem;max-width:620px;margin:0 auto 2rem}
+.btn{display:inline-block;padding:.9rem 2rem;border-radius:999px;text-decoration:none;font-weight:600;font-size:.95rem;margin:.3rem;transition:.25s}
+.btn.p{background:var(--accent);color:#fff}.btn.p:hover{transform:translateY(-2px);filter:brightness(1.08)}
+.btn.o{border:1.5px solid rgba(255,255,255,.65);color:#fff}.btn.w{display:block;text-align:center;background:var(--c);color:#fff}
+.stats{display:flex;flex-wrap:wrap;justify-content:center;gap:2.5rem;padding:3.5rem 5vw;background:#fff;border-bottom:1px solid #ececec}
+.stat{text-align:center}.stat .n{font-size:2.4rem;color:var(--c)}.stat .l{color:var(--mut);font-size:.85rem;letter-spacing:.08em;text-transform:uppercase}
+section{padding:5.5rem 5vw}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.5rem;max-width:1150px;margin:0 auto}
+.card{background:#fff;border:1px solid #ececec;border-radius:14px;padding:1.8rem;transition:.25s}
+.card:hover{transform:translateY(-4px);box-shadow:0 18px 40px rgba(15,20,26,.08)}
+.card .ic{font-size:1.6rem;color:var(--accent);margin-bottom:.8rem}
+.card h3{font-size:1.2rem;margin-bottom:.5rem}.card p{color:var(--mut);font-size:.95rem}
+.card .price{margin-top:1rem;font-weight:700;color:var(--c)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:2rem;max-width:1100px;margin:0 auto}
+.step{background:#fff;border-radius:14px;padding:2rem;border:1px solid #ececec}
+.sn{font-family:'Playfair+Display:wght@600;700',serif;font-size:2.6rem;color:var(--accent);opacity:.35;line-height:1;margin-bottom:.6rem}
+.revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:1150px;margin:0 auto}
+.rev{background:#fff;border-radius:14px;padding:1.8rem;border:1px solid #ececec}
+.stars{color:#e6a817;letter-spacing:.15em;margin-bottom:.7rem}
+.rev p{font-style:italic;color:var(--ink)}.who{margin-top:1rem}.who span{display:block;color:var(--mut);font-size:.85rem}
+.band{background:var(--d);color:#fff}
+.band .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;max-width:1050px;margin:0 auto}
+.tier{background:#181e25;border:1px solid #2a323b;border-radius:14px;padding:2rem}
+.tier.featured{border-color:var(--accent);transform:scale(1.03)}
+.tn{text-transform:uppercase;letter-spacing:.15em;font-size:.78rem;color:var(--accent)}
+.tp{font-family:'Playfair+Display:wght@600;700',serif;font-size:2rem;margin:.4rem 0 1rem}
+.tier ul{list-style:none;margin-bottom:1.4rem}.tier li{padding:.35rem 0;color:#c6cdd4;font-size:.93rem}.tier li::before{content:"✓  ";color:var(--accent)}
+.faq{max-width:760px;margin:0 auto}
+details{background:#fff;border:1px solid #ececec;border-radius:12px;padding:1.2rem 1.5rem;margin-bottom:.9rem}
+summary{font-weight:600;cursor:pointer;font-size:1.02rem}
+details p{margin-top:.7rem;color:var(--mut)}
+.contact{background:#fff}
+.cwrap{display:grid;grid-template-columns:1fr 1fr;gap:3rem;max-width:1050px;margin:0 auto}
+@media(max-width:820px){.cwrap{grid-template-columns:1fr}}
+form{display:grid;gap:1rem}
+input,textarea{padding:.95rem 1.1rem;border:1px solid #dcdfe3;border-radius:10px;font:inherit;background:var(--bg)}
+input:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
+button{padding:1rem;background:var(--c);color:#fff;border:0;border-radius:10px;font:inherit;font-weight:600;cursor:pointer}
+.info div{margin-bottom:1.3rem}.info b{display:block;color:var(--mut);font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:.2rem}
+footer{background:var(--d);color:#9aa4ad;padding:3rem 5vw;text-align:center;font-size:.88rem}
+footer .fl{display:flex;gap:2rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.4rem}
+footer a{color:#cfd6dd;text-decoration:none}
+.wa{position:fixed;bottom:1.4rem;right:1.4rem;z-index:60;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(0,0,0,.25)}
+.wa svg{width:28px;height:28px;fill:#fff}
+</style></head>
+<body>
+<nav><a class="logo" href="#">Flour <b>& Fig</b></a>
+<div class="links"><a href="#menu">Bakes</a><a href="#about">Our kitchen</a><a href="#pricing">Cakes & boxes</a><a href="#faq">FAQ</a><a href="#contact">Order</a></div><a class="nav-call" href="tel:+97145550171">+971 4 555 0171</a></nav>
+<header><video autoplay muted loop playsinline src="bakery-hero.mp4"></video><div class="veil"></div>
+<div class="hero"><div class="eyebrow">Artisan bakery · Jumeirah</div><h1>Baked at 4 AM, gone by noon</h1><p>Naturally leavened sourdough, viennoiserie and celebration cakes from a small Jumeirah kitchen. Order by 8 PM for next-morning pickup.</p>
+<a class="btn p" href="#contact">Order for tomorrow</a><a class="btn o" href="#pricing">See pricing</a></div></header>
+<div class="stats"><div class="stat"><div class="n" data-n="6AM">0</div><div class="l">Ovens on</div></div><div class="stat"><div class="n" data-n="14">0</div><div class="l">Breads daily</div></div><div class="stat"><div class="n" data-n="4.9">0</div><div class="l">Google rating</div></div><div class="stat"><div class="n" data-n="24h">0</div><div class="l">Custom cake lead time</div></div></div>
+<section id="services"><h2>Today's bakes</h2><p class="sub">Everything is mixed overnight and baked fresh each morning. When it sells out, it sells out.</p><div class="grid"><div class="card"><h3>Sourdough loaves</h3><p>Country white, olive and walnut, and our 30% whole grain house loaf.</p><div class="price">From AED 22</div></div><div class="card"><h3>Viennoiserie</h3><p>Butter croissants, pain au chocolat and almond twists laminated in-house.</p><div class="price">From AED 11</div></div><div class="card"><h3>Cakes & desserts</h3><p>Burnt basque cheesecake, pistachio opera and daily tart du jour.</p><div class="price">From AED 9</div></div><div class="card"><h3>Celebration cakes</h3><p>Custom cakes for birthdays and weddings, decorated to your brief.</p><div class="price">From AED 240</div></div><div class="card"><h3>Savories & salads</h3><p>Focaccia sandwiches, labneh bowls and soup of the day from 11 AM.</p><div class="price">From AED 32</div></div><div class="card"><h3>Coffee bar</h3><p>Espresso and filter from a Dubai roaster, plus hot chocolate and fresh juices.</p><div class="price">From AED 16</div></div></div></section>
+<section id="about" style="background:#f3f1ec"><h2>How ordering works</h2><p class="sub">One kitchen, real bakers, no central factory. Here is the flow.</p><div class="steps"><div class="step"><div class="sn">01</div><h3>Order by 8 PM</h3><p>Call or WhatsApp your loaf, box or cake for next-morning pickup or delivery.</p></div><div class="step"><div class="sn">02</div><h3>We bake at dawn</h3><p>Your order is shaped, proofed and baked the same morning it reaches you.</p></div><div class="step"><div class="sn">03</div><h3>Pick up or deliver</h3><p>Counter pickup from 6:30 AM, or same-morning delivery across Jumeirah and Al Wasl.</p></div></div></section>
+<section><h2>What our clients say</h2><p class="sub">Reviews from real customers of the business</p><div class="revs"><div class="rev"><div class="stars">★★★★★</div><p>The only sourdough in Dubai I finish before it goes stale. The walnut loaf with salted butter is a ritual now.</p><div class="who"><b>Sara M.</b><span>Weekly regular</span></div></div><div class="rev"><div class="stars">★★★★★</div><p>Ordered a pistachio birthday cake with 24 hours notice and it stole the entire party.</p><div class="who"><b>Khalid A.</b><span>Celebration cake</span></div></div><div class="rev"><div class="stars">★★★★★</div><p>Their almond croissants sell out by 9. I set an alarm now, not proud of it.</p><div class="who"><b>Elena T.</b><span>Morning regular</span></div></div></div></section>
+<section id="pricing" class="band"><h2 style="color:#fff">Pricing</h2><p class="sub" style="color:#c6cdd4">Transparent rates. Confirm your slot on the call.</p><div class="tiers"><div class="tier"><div class="tn">Breakfast box</div><div class="tp">AED 95</div><ul><li>4 mixed viennoiserie</li><li>1 small sourdough</li><li>1 jam + butter trio</li><li>Serves 3 to 4, pickup or delivery</li></ul><a class="btn w" href="#contact">Enquire now</a></div><div class="tier featured"><div class="tn">Celebration cake</div><div class="tp">AED 240+</div><ul><li>Custom design to your brief</li><li>Serves 10 to 30</li><li>24-hour lead time</li><li>Personal message plate included</li></ul><a class="btn w" href="#contact">Enquire now</a></div><div class="tier"><div class="tn">Office bread plan</div><div class="tp">AED 390 / week</div><ul><li>5 loaves delivered each morning</li><li>Rotating weekly variety</li><li>Invoice billing for companies</li><li>Pause or cancel any week</li></ul><a class="btn w" href="#contact">Enquire now</a></div></div></section>
+<section id="faq"><h2>Questions, answered</h2><p class="sub">Everything you usually ask before booking</p><div class="faq"><details><summary>Can I get a cake today?</summary><p>Same-day cakes happen when the kitchen allows it, call us first. 24 hours is the safe lead time.</p></details><details><summary>Do you deliver?</summary><p>Same-morning delivery in Jumeirah and Al Wasl; courier across Dubai for orders above AED 150.</p></details><details><summary>Is the sourdough gluten-free?</summary><p>No, our breads are naturally leavened wheat. We stock one certified gluten-free loaf daily.</p></details><details><summary>Can I order for a whole week?</summary><p>Yes, the weekly bread plan delivers Monday to Friday with rotating loaves.</p></details><details><summary>Do you take corporate orders?</summary><p>Yes, invoiced weekly plans and event boxes for offices and hotels.</p></details></div></section>
+<section id="contact" class="contact"><h2>Order for tomorrow</h2><p class="sub">We reply within one working day</p>
+<div class="cwrap"><form onsubmit="event.preventDefault();this.innerHTML='<p style=\'padding:1.5rem;background:#eef7f2;border-radius:10px\'>Thank you. We will call you back shortly.</p>'">
+<input type="text" placeholder="Your name" required><input type="tel" placeholder="Phone number" required><textarea rows="4" placeholder="Tell us what you need"></textarea><button type="submit">Send request</button></form>
+<div class="info"><div><b>Address</b>Shop 4, Al Wasl Road, Jumeirah 1, Dubai</div><div><b>Phone</b>+971 4 555 0171</div><div><b>Email</b>hello@flourandfig.ae</div><div><b>Hours</b>Daily 6 AM – 9 PM</div><div><b>WhatsApp</b><a href="https://wa.me/97145550171" style="color:var(--c)">+971 4 555 0171</a></div></div></div></section>
+<footer><div class="fl"><a href="#services">Services</a><a href="#about">About</a><a href="#pricing">Pricing</a><a href="#faq">FAQ</a><a href="#contact">Contact</a></div>© 2026 Flour & Fig. All rights reserved.</footer>
+<a class="wa" href="https://wa.me/97145550171" aria-label="WhatsApp"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-1.7A13 13 0 1 0 16 3zm0 23.6c-1.9 0-3.7-.5-5.3-1.5l-.4-.2-3.8 1 1-3.7-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.9-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7.1a8.7 8.7 0 0 1-4.3-3.8c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.6l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .8 2.8.9 3.8.7a3.2 3.2 0 0 0 2.1-1.5 2.6 2.6 0 0 0 .2-1.5c-.1-.2-.3-.3-.7-.5z"/></svg></a>
+</body></html>
