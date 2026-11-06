@@ -98,9 +98,38 @@ nav.glassy,.nav.glassy{backdrop-filter:blur(14px) saturate(160%);background:rgba
 .catlbl{letter-spacing:.14em}
 ::selection{background:rgba(120,140,255,.35)}
 </style>
+<style id="pp10">/* premium pass 10 */
+*{scrollbar-width:thin;scrollbar-color:rgba(109,92,255,.45) #0b0b12}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#0b0b12}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#6d5cff,#b44cff);border-radius:8px;border:2px solid #0b0b12}
+h2,h3{letter-spacing:-.015em}
+.reveal{transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1),filter .7s cubic-bezier(.2,.8,.2,1);filter:blur(6px)}
+.reveal.in{filter:blur(0)}
+#totop{position:fixed;right:22px;bottom:22px;z-index:60;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(16,16,26,.85);backdrop-filter:blur(12px);color:#cfc7ff;display:grid;place-items:center;font-size:1.05rem;cursor:pointer;opacity:0;transform:translateY(12px);transition:.35s cubic-bezier(.2,.8,.2,1);box-shadow:0 10px 30px -10px rgba(109,92,255,.35)}
+#totop.on{opacity:1;transform:translateY(0)}
+#totop:hover{background:rgba(109,92,255,.28);color:#fff;border-color:rgba(141,110,255,.5)}
+@media (prefers-reduced-motion:reduce){.reveal{filter:none;transition:none}.aurora{animation:none}}
+
+.aurora{position:absolute;inset:-20%;z-index:1;pointer-events:none;overflow:hidden}
+.aurora::before,.aurora::after{content:"";position:absolute;width:42vw;height:42vw;border-radius:50%;filter:blur(90px);opacity:.2}
+.aurora::before{background:radial-gradient(circle at 30% 30%,#6d5cff,transparent 70%);top:-8%;left:-6%;animation:ad1 26s ease-in-out infinite alternate}
+.aurora::after{background:radial-gradient(circle at 70% 70%,#b44cff,transparent 70%);bottom:-14%;right:-8%;animation:ad2 32s ease-in-out infinite alternate}
+@keyframes ad1{to{transform:translate(9vw,7vh) scale(1.15)}}
+@keyframes ad2{to{transform:translate(-8vw,-6vh) scale(1.1)}}
+.cats a{position:relative}
+.cats a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1.5px;background:linear-gradient(90deg,#6d5cff,#b44cff);transition:right .35s cubic-bezier(.2,.8,.2,1)}
+.cats a:hover::after{right:0}
+.cwcard{box-shadow:0 0 0 1px rgba(255,255,255,.045) inset}
+.cwcard:hover{box-shadow:0 0 0 1px rgba(141,110,255,.35) inset,0 24px 60px -22px rgba(109,92,255,.4)}
+.cwimg{overflow:hidden;border-radius:10px}
+.cwimg img:hover{filter:brightness(1.06) saturate(1.05)}
+.cwkicker{position:relative}
+.cwkicker::after{content:"";position:absolute;left:0;bottom:-7px;width:30px;height:2px;border-radius:2px;background:linear-gradient(90deg,#6d5cff,#b44cff);opacity:.8}
+</style>
 </head><body>
 <nav class="wrap"><span class="brand">Hashmi Digital</span><span class="cats"><a href="#cportfolio">Portfolio</a><a href="#ccommerce">Commerce</a><a href="#cbooking">Booking</a><a href="#cbusiness">Business</a><a href="#clocal">Local</a><a href="#crealestate">Real estate</a><a href="#csaas">SaaS</a><a href="#ceducation">Education</a></span></nav>
-<header class="hero"><div class="wrap">
+<header class="hero"><div class="aurora" aria-hidden="true"></div><div class="wrap">
 <p class="kick">Client Web Design</p>
 <h1>35 website concepts.<br><em>One unique cover each.</em></h1>
 <p class="sub">Every project below carries its own distinct cover art, no repeats: commerce, booking, SaaS, portfolio and local business lanes, each designed around how that client actually sells.</p>
@@ -134,5 +163,21 @@ addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u();})(
 
 <script id="pp8js">/* premium pass 8 */
 addEventListener('scroll',function(){document.querySelectorAll('nav,.nav,header').forEach(function(e){e.classList.toggle('glassy',window.scrollY>40)})},{passive:true});
+</script>
+<script id="pp10js">
+(function(){
+var b=document.createElement('button');b.id='totop';b.setAttribute('aria-label','Back to top');b.innerHTML='\u2191';document.body.appendChild(b);
+var u=function(){b.classList.toggle('on',window.scrollY>700)};
+addEventListener('scroll',u,{passive:true});u();
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+})();
+(function(){
+var links=[].slice.call(document.querySelectorAll('.navlinks a,.cats a'));
+if(!links.length)return;
+var targets=links.map(function(a){return document.getElementById((a.getAttribute('href')||'').replace('#',''))}).filter(Boolean);
+if(!targets.length||!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle('act',l.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+targets.forEach(function(t){io.observe(t)});
+})();
 </script>
 </body></html>
