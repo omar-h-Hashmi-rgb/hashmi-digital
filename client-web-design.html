@@ -215,6 +215,39 @@ strong{font-weight:600;}
 .nav a:hover:after,.navbar a:hover:after{width:100%;}
 body{background-image:radial-gradient(ellipse 80% 50% at 20% -10%,rgba(88,60,220,0.10),transparent),radial-gradient(ellipse 60% 40% at 90% 10%,rgba(56,120,255,0.07),transparent);background-attachment:fixed;}
 </style>
+
+<style id="polish25">
+html { scroll-behavior: smooth; }
+::selection { background: #7c3aed; color: #fff; }
+:where(h1, h2, h3) { letter-spacing: -0.02em; text-wrap: balance; }
+:where(p, li) { text-wrap: pretty; }
+:where(header) { backdrop-filter: saturate(150%) blur(14px); -webkit-backdrop-filter: saturate(150%) blur(14px); }
+:where(a) { transition: color .25s ease, opacity .25s ease; }
+:where(button, [class*="btn"], a[class*="button"]) { transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s ease, background .25s ease; }
+:where(button:hover, [class*="btn"]:hover, a[class*="button"]:hover) { transform: translateY(-2px); box-shadow: 0 12px 30px -12px rgba(124,58,237,.45); }
+:where(img) { will-change: transform; }
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 1; background: radial-gradient(120% 90% at 50% 0%, transparent 55%, rgba(2,6,23,.28) 100%); mix-blend-mode: multiply; }
+#fo-scroll-progress { position: fixed; top: 0; left: 0; height: 2px; width: 0; z-index: 2147483647; background: linear-gradient(90deg, #7c3aed, #06b6d4); transition: width .12s linear; border-radius: 0 2px 2px 0; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  :where(*) { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+</style>
+<script id="polish25-js">
+(function () {
+  var bar = document.createElement('div');
+  bar.id = 'fo-scroll-progress';
+  document.body.appendChild(bar);
+  var update = function () {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  };
+  addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
 </head><body>
 <nav class="wrap"><span class="brand">Hashmi Digital</span><span class="cats"><a href="#cportfolio">Portfolio</a><a href="#ccommerce">Commerce</a><a href="#cbooking">Booking</a><a href="#cbusiness">Business</a><a href="#clocal">Local</a><a href="#crealestate">Real estate</a><a href="#csaas">SaaS</a><a href="#ceducation">Education</a></span><a href="#cdemos">Live sites</a></nav>
 <header class="hero"><div class="aurora" aria-hidden="true"></div><div class="wrap">
