@@ -298,7 +298,7 @@ footer::before{content:"";position:absolute;left:8%;right:8%;top:-1px;height:1px
 .cwlinks{margin-top:12px}
 @media (prefers-reduced-motion:reduce){.pp11spot{display:none}.r11{opacity:1;transform:none}}
 </style>
-<style id="polish14">
+<style id="polish15">
 html{scrollbar-color:#4a4570 #0b0b12}
 ::-webkit-scrollbar{width:10px}::-webkit-scrollbar-track{background:#0b0b12}
 ::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#6d5cff,#b44cff);border-radius:8px}
@@ -317,6 +317,30 @@ h1,h2,h3{letter-spacing:-.028em;text-wrap:balance}
 a:focus-visible,button:focus-visible{outline:2px solid #8d7bff;outline-offset:3px;border-radius:4px}
 #p14bar{position:fixed;top:0;left:0;height:3px;width:0;z-index:99;background:linear-gradient(90deg,#6d5cff,#b44cff,#5cd6ff);box-shadow:0 0 12px rgba(109,92,255,.55)}
 @media (prefers-reduced-motion:reduce){.hero .heroin>*{animation:none;opacity:1;transform:none}#p14bar{display:none}}
+</style>
+
+<style id="polish15">
+:root{--p15-ring:rgba(124,140,255,.35)}
+html{scroll-behavior:smooth;scroll-padding-top:96px;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+a,button,[role=button]{outline:none}
+a:focus-visible,button:focus-visible,[role=button]:focus-visible{outline:2px solid #8b96ff;outline-offset:3px;border-radius:6px}
+.btn,.cta,button[type=submit],.button{position:relative;overflow:hidden;isolation:isolate;transition:transform .25s cubic-bezier(.2,.7,.2,1),box-shadow .25s}
+.btn::after,.cta::after,.button::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;z-index:1;background:linear-gradient(105deg,transparent,rgba(255,255,255,.28),transparent);transform:skewX(-18deg);transition:left .6s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.btn:hover::after,.cta:hover::after,.button:hover::after{left:130%}
+.btn:hover,.cta:hover,.button:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(124,140,255,.25)}
+.card,.work-card,.project-card{transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s,border-color .35s}
+.card:hover,.work-card:hover,.project-card:hover{transform:translateY(-5px);border-color:rgba(124,140,255,.5);box-shadow:0 18px 45px rgba(0,0,0,.45),0 0 0 1px var(--p15-ring) inset}
+h1,h2,h3{letter-spacing:-.02em}
+h1 em,h2 em,.grad,.gradient-text{background-clip:text;-webkit-background-clip:text}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn::after,.cta::after,.button::after{display:none}}
+</style>
+<script id="polish15-js">
+(function(){var els=document.querySelectorAll('section,footer');if(!('IntersectionObserver' in window))return;var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('p15-in');io.unobserve(e.target)}})},{threshold:.12});els.forEach(function(el,i){el.classList.add('p15-watch');el.style.transitionDelay=(i%4*60)+'ms';io.observe(el)})})();
+</script>
+<style id="polish15-anim">
+.p15-watch{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.2,.7,.2,1),transform .7s cubic-bezier(.2,.7,.2,1)}
+.p15-watch.p15-in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.p15-watch{opacity:1;transform:none;transition:none}}
 </style>
 </head>
 <body>
@@ -735,7 +759,7 @@ targets.forEach(function(t){io.observe(t)});
 })();
 </script>
 
-<script id="polish14js">
+<script id="polish15js">
 (function(){var b=document.createElement('div');b.id='p14bar';document.body.appendChild(b);
 var h=document.documentElement;var up=function(){var m=h.scrollHeight-h.clientHeight;if(m>0)b.style.width=(h.scrollTop/m*100)+'%'};h.addEventListener('scroll',up,{passive:true});up();})();
 </script>
