@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Iron Peak Fitness | Gym & Strength Club, Business Bay Dubai</title><meta name="description" content="Iron Peak Fitness, Business Bay Dubai. Strength training, HIIT, boxing and personal coaching with real programming, not mirrors.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#ff6b1a;--acc2:#ffb703;--dark:#101114;--light:#f7f7f5;--ink:#1c1e22}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--ink);background:var(--light);line-height:1.6}
+h1,h2,h3,h4{font-family:Archivo:wght@600;700;800,serif;font-weight:700;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:rgba(10,14,20,.55);backdrop-filter:blur(14px)}
+nav .brand{font-family:Archivo:wght@600;700;800,serif;font-size:22px;font-weight:800;color:#fff;letter-spacing:.5px}
+nav .brand span{color:var(--acc)}
+nav .links{display:flex;gap:26px}nav .links a{color:#e8e8ea;font-size:14px;letter-spacing:.4px;transition:.2s}
+nav .links a:hover{color:var(--acc)}
+nav .btn{padding:9px 20px;font-size:13px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,10,16,.88) 20%,rgba(8,10,16,.45) 60%,rgba(8,10,16,.25))}
+.hero .wrap{position:relative;z-index:2;padding-top:80px}
+.kick{display:inline-block;letter-spacing:3px;font-size:12px;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);padding:7px 14px;border-radius:999px;margin-bottom:22px;background:rgba(0,0,0,.25)}
+.hero h1{font-size:clamp(38px,6vw,64px);max-width:640px;color:#fff}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.sub{margin:18px 0 30px;font-size:18px;max-width:520px;color:#d5d8de}
+.btn{display:inline-block;border-radius:999px;padding:14px 30px;font-weight:700;font-size:15px;transition:.2s;cursor:pointer;border:none}
+.btn.solid{background:var(--acc);color:#ffffff;box-shadow:0 8px 26px -8px var(--acc)}
+.btn.solid:hover{transform:translateY(-2px)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff;margin-left:12px}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.stats{display:flex;gap:44px;margin-top:46px;flex-wrap:wrap}
+.stat .num{font-family:Archivo:wght@600;700;800,serif;font-size:34px;font-weight:800;color:#fff}
+.stat .lbl{font-size:13px;color:#aab0ba;letter-spacing:.5px}
+.section{padding:88px 0}
+.sec-kick{color:var(--acc);letter-spacing:3px;font-size:12px;text-transform:uppercase;font-weight:700}
+.sec-t{font-size:clamp(28px,4vw,42px);margin:10px 0 12px}
+.sec-s{color:#5c6470;max-width:640px;font-size:16.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:46px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:18px;padding:30px 26px;transition:.25s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -22px rgba(10,14,20,.25);border-color:var(--acc)}
+.card .ic{font-size:30px;width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--acc) 14%,white);margin-bottom:16px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:#5c6470;font-size:14.5px}
+.price{margin-top:14px;font-weight:800;color:var(--acc);font-family:Archivo:wght@600;700;800,serif;font-size:16px}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.split .img{border-radius:20px;overflow:hidden;min-height:380px;background:linear-gradient(135deg,var(--dark),color-mix(in srgb,var(--acc) 55%,var(--dark)));display:flex;align-items:center;justify-content:center;font-size:90px}
+.steps{display:grid;gap:26px;margin-top:44px}
+.step{display:flex;gap:18px}
+.sn{flex:0 0 46px;height:46px;border-radius:50%;background:var(--acc);color:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:Archivo:wght@600;700;800,serif}
+.step h4{margin-bottom:4px}.step p{color:#5c6470;font-size:14.5px}
+.testi{background:#fff;border:1px solid #e8eaee;border-radius:18px;padding:26px}
+.stars{color:var(--acc);letter-spacing:2px;margin-bottom:10px}
+.testi p{font-size:15px;color:#3b414b}
+.who{margin-top:14px;display:flex;flex-direction:column}
+.who span{color:#8a919c;font-size:13px}
+.dark-band{background:var(--dark);color:#fff;border-radius:26px;padding:56px;margin-top:10px}
+.dark-band .sec-t{color:#fff}.dark-band .sec-s{color:#b7bdc7}
+.faq details{border-bottom:1px solid #e4e7ec;padding:18px 0}
+.faq summary{font-weight:700;cursor:pointer;font-size:16.5px}
+.faq p{margin-top:10px;color:#5c6470;font-size:15px}
+.contact-sec{background:linear-gradient(180deg,var(--light),color-mix(in srgb,var(--acc) 8%,var(--light)))}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cinfo{display:grid;gap:16px;margin:26px 0}
+.ci{display:flex;gap:14px;align-items:flex-start;font-size:15px}
+.ci-ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid #e5e8ec;display:flex;align-items:center;justify-content:center;flex:0 0 42px}
+.trust-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.trust{font-size:12.5px;border:1px solid #d8dce2;border-radius:999px;padding:6px 13px;color:#4a515c;background:#fff}
+.book{background:#fff;border-radius:22px;padding:34px;box-shadow:0 30px 60px -30px rgba(10,14,20,.35);border:1px solid #e8eaee}
+.book h3{margin-bottom:18px;font-size:22px}
+.book input,.book select,.book textarea{width:100%;padding:13px 15px;margin-bottom:12px;border:1px solid #dfe3e9;border-radius:12px;font-size:15px;font-family:inherit;background:#fbfcfe}
+.book input:focus,.book select:focus,.book textarea:focus{outline:2px solid var(--acc);border-color:transparent}
+#bok{padding:16px;border-radius:12px;background:color-mix(in srgb,var(--acc) 15%,white);font-weight:700}
+footer{background:var(--dark);color:#9aa2ad;padding:44px 0 26px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer .fbrand{font-family:Archivo:wght@600;700;800,serif;font-size:20px;color:#fff;font-weight:800}
+footer a:hover{color:var(--acc)}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.5);font-size:26px}
+.pbadge{position:absolute;top:14px;right:14px;background:var(--acc);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:5px 10px;border-radius:999px;text-transform:uppercase}
+@media(max-width:860px){.split,.grid2{grid-template-columns:1fr}nav .links{display:none}.hero h1{font-size:38px}.dark-band{padding:34px}}
+</style></head>
+<body>
+<nav><div class="brand">IRON<span>PEAK</span></div><div class="links"><a href="#services">Programs</a><a href="#about">The floor</a><a href="#pricing">Membership</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div><a href="#contact" class="btn solid">Join now</a></nav>
+<header class="hero"><video autoplay muted loop playsinline src="gym-hero.mp4"></video><div class="veil"></div>
+  <div class="wrap"><span class="kick">Business Bay · Open 24/7</span>
+  <h1>Train like it <em>matters</em></h1><p class="sub">Strength, conditioning, boxing and recovery in a 12,000 sq ft facility built for people who show up. First session free.</p>
+  <a href="#contact" class="btn solid">Claim free session</a><a href="#services" class="btn ghost">See programs</a>
+  <div class="stats"><div class="stat"><div class="num" data-c="2,100+">0</div><div class="lbl">Active members</div></div><div class="stat"><div class="num" data-c="38">0</div><div class="lbl">Weekly classes</div></div><div class="stat"><div class="num" data-c="24/7">0</div><div class="lbl">Access, every day</div></div><div class="stat"><div class="num" data-c="9">0</div><div class="lbl">Certified coaches</div></div></div></div></header>
+<section id="services" class="section"><div class="wrap">
+  <span class="sec-kick">Programs</span><h2 class="sec-t">Pick your fight</h2><p class="sec-s">Structured programming with progressive overload, logged and tracked. Not random circuits with loud music.</p>
+  <div class="grid"><div class="card"><div class="ic">🏋️</div><h3>Strength & powerlifting</h3><p>Squat, bench, deadlift. Barbell-first programming with a coach on the floor at all peak hours.</p><div class="price">Included in membership</div></div><div class="card"><div class="ic">🔥</div><h3>HIIT & conditioning</h3><p>40-minute engine work in our dedicated turf zone. Heart-rate tracked on the studio screens.</p><div class="price">Included in membership</div></div><div class="card"><div class="ic">🥊</div><h3>Boxing & MMA</h3><p>Full ring, heavy bags and pads with former competitive fighters. Technique before power.</p><div class="price">From AED 350 / month</div></div><div class="card"><div class="ic">🎯</div><h3>Personal coaching</h3><p>1-on-1 programming, weekly check-ins and nutrition targets. Average client result in 12 weeks: minus 7% body fat.</p><div class="price">From AED 1,600 / month</div></div><div class="card"><div class="ic">🧘</div><h3>Mobility & recovery</h3><p>Guided mobility classes, sauna, ice bath and a compression-suit recovery lounge.</p><div class="price">From AED 250 / month</div></div><div class="card"><div class="ic">🥗</div><h3>Nutrition coaching</h3><p>InBody scans every 4 weeks and meal plans built around Gulf food, not exported PDFs.</p><div class="price">AED 400 / month</div></div></div></div></section>
+<section id="about" class="section" style="background:#fff"><div class="wrap split">
+  <div><span class="sec-kick">The floor</span><h2 class="sec-t">12,000 sq ft. No waiting for equipment.</h2><p class="sec-s">Two full rack rows, calibrated plates, turf zone, boxing ring, and a recovery wing most hotels would envy. Member count is capped by zone so peak hours stay trainable. Every new member gets a movement screen and a written first program before touching a barbell.</p>
+  <div class="steps"><div class="step"><div class="sn">1</div><div><h4>Free trial session</h4><p>Come train. A coach runs you through a real session, not a sales tour.</p></div></div><div class="step"><div class="sn">2</div><div><h4>Movement screen</h4><p>We test how you move and build your first 4-week program around it.</p></div></div><div class="step"><div class="sn">3</div><div><h4>Train and track</h4><p>Log every session in the member app. Coaches adjust your program monthly.</p></div></div><div class="step"><div class="sn">4</div><div><h4>Re-test every 12 weeks</h4><p>Numbers on the bar and on the InBody. Progress you can see.</p></div></div></div></div>
+  <div class="img">🏋️</div></div></section>
+<section id="reviews" class="section"><div class="wrap">
+  <span class="sec-kick">Member stories</span><h2 class="sec-t">4.8 stars from 760+ reviews</h2><p class="sec-s">What members actually say after three months.</p>
+  <div class="grid"><div class="testi"><div class="stars">★★★★★</div><p>“Down 14 kg in five months. The programming is the difference, it is written down and they hold you to it.”</p><div class="who"><strong>Faisal R.</strong><span>Google review</span></div></div><div class="testi"><div class="stars">★★★★★</div><p>“The 6am crew keeps me consistent. Never once waited for a squat rack, which says a lot for Dubai.”</p><div class="who"><strong>Ana P.</strong><span>Google review</span></div></div><div class="testi"><div class="stars">★★★★★</div><p>“Boxing coaches are legit ex-fighters. Learned more in two months than a year at my old gym.”</p><div class="who"><strong>Yusuf B.</strong><span>Google review</span></div></div></div></div></section>
+<section class="section"><div class="wrap"><div class="dark-band" id="pricing">
+  <span class="sec-kick">Transparent pricing</span><h2 class="sec-t">Membership, no join fee</h2><p class="sec-s">Cancel anytime with 30 days notice. Corporate rates for teams of 5 or more; ask about the Business Bay resident discount.</p>
+  <div class="grid" style="margin-top:34px"><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><h3 style="color:#fff">Off-peak</h3><div class="price" style="font-size:26px">AED 199 / mo</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>Access 9am–4pm, all zones</li><li>All group classes</li><li>InBody scan every 8 weeks</li><li>Locker and towel service</li></ul></div><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><span class="pbadge">Most popular</span><h3 style="color:#fff">All-access</h3><div class="price" style="font-size:26px">AED 349 / mo</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>24/7 access, every zone</li><li>All 38 weekly classes</li><li>Free first PT session</li><li>Sauna and recovery lounge</li></ul></div><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><h3 style="color:#fff">Coached</h3><div class="price" style="font-size:26px">AED 1,600 / mo</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>8 personal sessions / month</li><li>Custom programming and nutrition</li><li>Weekly coach check-ins</li><li>All-access included</li></ul></div></div></div></div></section>
+<section id="faq" class="section" style="padding-top:20px"><div class="wrap split" style="align-items:flex-start">
+  <div><span class="sec-kick">Good to know</span><h2 class="sec-t">Questions, answered</h2><div class="faq"><details><summary>Can I try before joining?</summary><p>Yes, your first session is free, including a class. Bring ID and trainers; we handle the rest.</p></details><details><summary>Is it really open 24/7?</summary><p>Yes for all-access members. Staffed 6am–11pm; outside those hours access is by member app with security monitoring.</p></details><details><summary>Do you have ladies-only hours?</summary><p>Ladies-only floor hours are 9am–12pm daily, plus female coaches on request for PT.</p></details><details><summary>What about parking?</summary><p>180 covered bays in Bay Square with 2 free hours validated for members.</p></details></div></div>
+  <div class="img" style="min-height:300px">🥊</div></div></section>
+
+    <section id="contact" class="section contact-sec">
+      <div class="wrap grid2">
+        <div>
+          <h2 class="sec-t">Start this week</h2>
+          <p class="sec-s">Walk in for a tour any day, or drop your details and a coach will call you back within 2 hours.</p>
+          <div class="cinfo">
+            <div class="ci"><span class="ci-ic">📍</span><div><strong>Visit</strong><br>Unit G04, Bay Square Building 6, Business Bay, Dubai</div></div>
+            <div class="ci"><span class="ci-ic">📞</span><div><strong>Call</strong><br><a href="tel:+97145550964">+971 4 555 0964</a></div></div>
+            <div class="ci"><span class="ci-ic">✉️</span><div><strong>Email</strong><br><a href="mailto:hello@ironpeak.ae">hello@ironpeak.ae</a></div></div>
+            <div class="ci"><span class="ci-ic">🕒</span><div><strong>Hours</strong><br>Open 24/7 · Staffed 6:00–23:00</div></div>
+          </div>
+          <div class="trust-row">< s p a n   c l a s s = " t r u s t " > R E P s - c e r t i f i e d   c o a c h e s < / s p a n > < s p a n   c l a s s = " t r u s t " > B a y   S q u a r e   p a r k i n g < / s p a n > < s p a n   c l a s s = " t r u s t " > L a d i e s - o n l y   h o u r s < / s p a n > < s p a n   c l a s s = " t r u s t " > F r e e   t r i a l ,   n o   c a r d < / s p a n ></div>
+        </div>
+        <form class="book" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('bok').style.display='block';">
+          <h3>Claim your free session</h3>
+          <input required placeholder="Full name"><input required type="tel" placeholder="Phone / WhatsApp"><select><option>Strength training</option><option>HIIT / conditioning</option><option>Boxing / MMA</option><option>Personal coaching</option><option>Just a tour first</option></select><textarea rows="3" placeholder="Your goal in one line (optional)"></textarea>
+          <button class="btn solid" type="submit">Claim free session</button>
+          <div id="bok" style="display:none">✅ You're in! A coach will call you within 2 hours to book your free session.</div>
+        </form>
+      </div>
+    </section>
+<footer><div class="wrap"><div><div class="fbrand">IRON<span>PEAK</span></div><p style="margin-top:8px;max-width:340px">Iron Peak Fitness is a private strength and conditioning club in Business Bay. Membership capped per zone to keep the floor trainable.</p></div>
+<div><strong style="color:#fff">Quick links</strong><br><a href="#services">Programs</a><a href="#about">The floor</a><a href="#pricing">Membership</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+<div><strong style="color:#fff">Reach us</strong><br>Unit G04, Bay Square Building 6, Business Bay, Dubai<br><a href="tel:+97145550964">+971 4 555 0964</a><br><a href="mailto:hello@ironpeak.ae">hello@ironpeak.ae</a></div></div>
+<div class="wrap" style="margin-top:26px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12.5px">© 2026 Iron Peak Fitness. All rights reserved.</div></footer>
+<a class="wa" href="https://wa.me/97145550964" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;const c0=el.dataset.c;const m=c0.match(/^[\d.,]+/);const t=m?+m[0].replace(/,/g,''):0;const suf=m?c0.slice(m[0].length):'';let n=0;const st=Math.max(1,Math.round(t/40));const iv=setInterval(()=>{n+=st;if(n>=t){n=t;clearInterval(iv)}el.textContent=(t>=1000?Math.round(n).toLocaleString():(t%1?n.toFixed(1):Math.round(n)))+suf},24);io.unobserve(el)}}),{threshold:.4});document.querySelectorAll('.num').forEach(el=>io.observe(el));</script>
+</body></html>

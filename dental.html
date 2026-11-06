@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Al Noor Dental Studio | Premium Dental Clinic, Dubai Healthcare City</title><meta name="description" content="Al Noor Dental Studio, Dubai Healthcare City. Implants, veneers, orthodontics and whitening by internationally certified specialists.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#14a08c;--acc2:#c9a24b;--dark:#0a2b2f;--light:#f6faf9;--ink:#20343a}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Inter,sans-serif;color:var(--ink);background:var(--light);line-height:1.6}
+h1,h2,h3,h4{font-family:Playfair+Display:wght@600;700;800,serif;font-weight:700;line-height:1.15}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 24px}
+nav{position:fixed;top:0;left:0;right:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:14px 28px;background:rgba(10,14,20,.55);backdrop-filter:blur(14px)}
+nav .brand{font-family:Playfair+Display:wght@600;700;800,serif;font-size:22px;font-weight:800;color:#fff;letter-spacing:.5px}
+nav .brand span{color:var(--acc)}
+nav .links{display:flex;gap:26px}nav .links a{color:#e8e8ea;font-size:14px;letter-spacing:.4px;transition:.2s}
+nav .links a:hover{color:var(--acc)}
+nav .btn{padding:9px 20px;font-size:13px}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;color:#fff;overflow:hidden}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero .veil{position:absolute;inset:0;background:linear-gradient(100deg,rgba(8,10,16,.88) 20%,rgba(8,10,16,.45) 60%,rgba(8,10,16,.25))}
+.hero .wrap{position:relative;z-index:2;padding-top:80px}
+.kick{display:inline-block;letter-spacing:3px;font-size:12px;text-transform:uppercase;color:var(--acc);border:1px solid var(--acc);padding:7px 14px;border-radius:999px;margin-bottom:22px;background:rgba(0,0,0,.25)}
+.hero h1{font-size:clamp(38px,6vw,64px);max-width:640px;color:#fff}
+.hero h1 em{font-style:normal;color:var(--acc)}
+.hero p.sub{margin:18px 0 30px;font-size:18px;max-width:520px;color:#d5d8de}
+.btn{display:inline-block;border-radius:999px;padding:14px 30px;font-weight:700;font-size:15px;transition:.2s;cursor:pointer;border:none}
+.btn.solid{background:var(--acc);color:#ffffff;box-shadow:0 8px 26px -8px var(--acc)}
+.btn.solid:hover{transform:translateY(-2px)}
+.btn.ghost{border:1.5px solid rgba(255,255,255,.55);color:#fff;margin-left:12px}
+.btn.ghost:hover{border-color:var(--acc);color:var(--acc)}
+.stats{display:flex;gap:44px;margin-top:46px;flex-wrap:wrap}
+.stat .num{font-family:Playfair+Display:wght@600;700;800,serif;font-size:34px;font-weight:800;color:#fff}
+.stat .lbl{font-size:13px;color:#aab0ba;letter-spacing:.5px}
+.section{padding:88px 0}
+.sec-kick{color:var(--acc);letter-spacing:3px;font-size:12px;text-transform:uppercase;font-weight:700}
+.sec-t{font-size:clamp(28px,4vw,42px);margin:10px 0 12px}
+.sec-s{color:#5c6470;max-width:640px;font-size:16.5px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:22px;margin-top:46px}
+.card{background:#fff;border:1px solid #e8eaee;border-radius:18px;padding:30px 26px;transition:.25s;position:relative}
+.card:hover{transform:translateY(-6px);box-shadow:0 22px 44px -22px rgba(10,14,20,.25);border-color:var(--acc)}
+.card .ic{font-size:30px;width:58px;height:58px;border-radius:16px;display:flex;align-items:center;justify-content:center;background:color-mix(in srgb,var(--acc) 14%,white);margin-bottom:16px}
+.card h3{font-size:19px;margin-bottom:8px}
+.card p{color:#5c6470;font-size:14.5px}
+.price{margin-top:14px;font-weight:800;color:var(--acc);font-family:Playfair+Display:wght@600;700;800,serif;font-size:16px}
+.split{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:center}
+.split .img{border-radius:20px;overflow:hidden;min-height:380px;background:linear-gradient(135deg,var(--dark),color-mix(in srgb,var(--acc) 55%,var(--dark)));display:flex;align-items:center;justify-content:center;font-size:90px}
+.steps{display:grid;gap:26px;margin-top:44px}
+.step{display:flex;gap:18px}
+.sn{flex:0 0 46px;height:46px;border-radius:50%;background:var(--acc);color:#ffffff;display:flex;align-items:center;justify-content:center;font-weight:800;font-family:Playfair+Display:wght@600;700;800,serif}
+.step h4{margin-bottom:4px}.step p{color:#5c6470;font-size:14.5px}
+.testi{background:#fff;border:1px solid #e8eaee;border-radius:18px;padding:26px}
+.stars{color:var(--acc);letter-spacing:2px;margin-bottom:10px}
+.testi p{font-size:15px;color:#3b414b}
+.who{margin-top:14px;display:flex;flex-direction:column}
+.who span{color:#8a919c;font-size:13px}
+.dark-band{background:var(--dark);color:#fff;border-radius:26px;padding:56px;margin-top:10px}
+.dark-band .sec-t{color:#fff}.dark-band .sec-s{color:#b7bdc7}
+.faq details{border-bottom:1px solid #e4e7ec;padding:18px 0}
+.faq summary{font-weight:700;cursor:pointer;font-size:16.5px}
+.faq p{margin-top:10px;color:#5c6470;font-size:15px}
+.contact-sec{background:linear-gradient(180deg,var(--light),color-mix(in srgb,var(--acc) 8%,var(--light)))}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:48px}
+.cinfo{display:grid;gap:16px;margin:26px 0}
+.ci{display:flex;gap:14px;align-items:flex-start;font-size:15px}
+.ci-ic{width:42px;height:42px;border-radius:12px;background:#fff;border:1px solid #e5e8ec;display:flex;align-items:center;justify-content:center;flex:0 0 42px}
+.trust-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
+.trust{font-size:12.5px;border:1px solid #d8dce2;border-radius:999px;padding:6px 13px;color:#4a515c;background:#fff}
+.book{background:#fff;border-radius:22px;padding:34px;box-shadow:0 30px 60px -30px rgba(10,14,20,.35);border:1px solid #e8eaee}
+.book h3{margin-bottom:18px;font-size:22px}
+.book input,.book select,.book textarea{width:100%;padding:13px 15px;margin-bottom:12px;border:1px solid #dfe3e9;border-radius:12px;font-size:15px;font-family:inherit;background:#fbfcfe}
+.book input:focus,.book select:focus,.book textarea:focus{outline:2px solid var(--acc);border-color:transparent}
+#bok{padding:16px;border-radius:12px;background:color-mix(in srgb,var(--acc) 15%,white);font-weight:700}
+footer{background:var(--dark);color:#9aa2ad;padding:44px 0 26px;font-size:14px}
+footer .wrap{display:flex;justify-content:space-between;gap:24px;flex-wrap:wrap;align-items:flex-start}
+footer .fbrand{font-family:Playfair+Display:wght@600;700;800,serif;font-size:20px;color:#fff;font-weight:800}
+footer a:hover{color:var(--acc)}
+.wa{position:fixed;right:20px;bottom:20px;z-index:60;width:56px;height:56px;border-radius:50%;background:#25d366;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px -8px rgba(0,0,0,.5);font-size:26px}
+.pbadge{position:absolute;top:14px;right:14px;background:var(--acc);color:#fff;font-size:11px;font-weight:800;letter-spacing:1px;padding:5px 10px;border-radius:999px;text-transform:uppercase}
+@media(max-width:860px){.split,.grid2{grid-template-columns:1fr}nav .links{display:none}.hero h1{font-size:38px}.dark-band{padding:34px}}
+</style></head>
+<body>
+<nav><div class="brand">Al Noor <span>Dental</span></div><div class="links"><a href="#services">Treatments</a><a href="#about">The studio</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div><a href="#contact" class="btn solid">Book a visit</a></nav>
+<header class="hero"><video autoplay muted loop playsinline src="dental-hero.mp4"></video><div class="veil"></div>
+  <div class="wrap"><span class="kick">Dubai Healthcare City · DHCC Licensed</span>
+  <h1>A <em>confident smile</em> is the best thing you will wear</h1><p class="sub">Internationally certified specialists, digital smile design and same-day crowns, minutes from Bur Dubai.</p>
+  <a href="#contact" class="btn solid">Book a consultation</a><a href="#services" class="btn ghost">See treatments</a>
+  <div class="stats"><div class="stat"><div class="num" data-c="12,400+">0</div><div class="lbl">Smiles treated</div></div><div class="stat"><div class="num" data-c="4.9★">0</div><div class="lbl">Google rating</div></div><div class="stat"><div class="num" data-c="15 min">0</div><div class="lbl">From Dubai Metro</div></div><div class="stat"><div class="num" data-c="6 mo">0</div><div class="lbl">0% instalments</div></div></div></div></header>
+<section id="services" class="section"><div class="wrap">
+  <span class="sec-kick">Treatments</span><h2 class="sec-t">Everything your smile needs, under one roof</h2><p class="sec-s">From a routine clean to full-mouth rehabilitation, planned digitally and delivered by specialists who only do what you first see on screen.</p>
+  <div class="grid"><div class="card"><div class="ic">🦷</div><h3>Dental implants</h3><p>Swiss and German implant systems placed with guided 3D planning. Lifetime warranty on the implant fixture.</p><div class="price">From AED 2,900 per implant</div></div><div class="card"><div class="ic">😁</div><h3>Veneers & smile design</h3><p>Digital preview of your new smile before any tooth is touched. E-max and feldspathic veneers.</p><div class="price">From AED 950 per veneer</div></div><div class="card"><div class="ic">🫧</div><h3>Teeth whitening</h3><p>In-chair laser whitening with a desensitising protocol. Shade guaranteed or a second session free.</p><div class="price">AED 790 per session</div></div><div class="card"><div class="ic">🪥</div><h3>Orthodontics</h3><p>Clear aligners and ceramic braces with monthly progress scans you can follow on your phone.</p><div class="price">From AED 6,900 full case</div></div><div class="card"><div class="ic">🧒</div><h3>Kids' dentistry</h3><p>Gentle first visits, fluoride and sealants, and a play area that makes check-ups something they look forward to.</p><div class="price">Check-up AED 250</div></div><div class="card"><div class="ic">🩺</div><h3>Emergency care</h3><p>Same-day slots held open every morning for pain, swelling and broken teeth. WhatsApp us and we will fit you in.</p><div class="price">From AED 350</div></div></div></div></section>
+<section id="about" class="section" style="background:#fff"><div class="wrap split">
+  <div><span class="sec-kick">The studio</span><h2 class="sec-t">A clinic that feels calm, not clinical</h2><p class="sec-s">Al Noor was built by two dentists who were tired of rushed, upsell-heavy dentistry. Every plan is explained on screen, priced in writing, and there is never a treatment you did not agree to. Sterilisation is Class-B hospital grade and every chair has its own private room.</p>
+  <div class="steps"><div class="step"><div class="sn">1</div><div><h4>Digital-first check-up</h4><p>A 3D scan and photos in the first visit, so you see exactly what we see.</p></div></div><div class="step"><div class="sn">2</div><div><h4>Plan and price, in writing</h4><p>You leave with a written plan and fixed prices. No pressure to decide the same day.</p></div></div><div class="step"><div class="sn">3</div><div><h4>Treatment with specialists</h4><p>Every procedure is done by a specialist in that exact field, not a general dentist.</p></div></div><div class="step"><div class="sn">4</div><div><h4>Aftercare for life</h4><p>Free six-monthly check-ups for every treated patient, forever.</p></div></div></div></div>
+  <div class="img">🦷</div></div></section>
+<section id="reviews" class="section"><div class="wrap">
+  <span class="sec-kick">Patient stories</span><h2 class="sec-t">4.9 stars from 1,180+ reviews</h2><p class="sec-s">Real reviews from Google and WhatClinic, unedited.</p>
+  <div class="grid"><div class="testi"><div class="stars">★★★★★</div><p>“Walked in with a broken front tooth before my wedding and Dr Layla rebuilt it perfectly in one sitting. Nobody can tell which one it is.”</p><div class="who"><strong>Mariam A.</strong><span>Google review · Veneers</span></div></div><div class="testi"><div class="stars">★★★★★</div><p>“Finally a clinic that explains the price before touching your mouth. Got two implants, exactly what was quoted, zero surprises.”</p><div class="who"><strong>Omar K.</strong><span>Google review · Implants</span></div></div><div class="testi"><div class="stars">★★★★★</div><p>“My kids actually ask when the next dentist visit is. The team is magic with children.”</p><div class="who"><strong>Sara D.</strong><span>WhatClinic · Kids</span></div></div></div></div></section>
+<section class="section"><div class="wrap"><div class="dark-band" id="pricing">
+  <span class="sec-kick">Transparent pricing</span><h2 class="sec-t">Clear prices before you sit down</h2><p class="sec-s">Every price below is the full price. Insurance accepted; 0% instalments over 6 months on treatments above AED 2,000.</p>
+  <div class="grid" style="margin-top:34px"><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><span class="pbadge">Most booked</span><h3 style="color:#fff">New patient check-up</h3><div class="price" style="font-size:26px">AED 250</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>Full 3D scan and X-rays</li><li>Specialist consultation</li><li>Written treatment plan</li><li>Scales and polish included</li></ul></div><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><h3 style="color:#fff">Whitening package</h3><div class="price" style="font-size:26px">AED 790</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>In-chair laser session</li><li>Take-home top-up kit</li><li>Desensitising treatment</li><li>Free 6-month review</li></ul></div><div class="card" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.14);color:#dfe3e9"><h3 style="color:#fff">Full smile makeover</h3><div class="price" style="font-size:26px">AED 9,500</div><ul style="margin:14px 0 0 18px;font-size:14px;line-height:1.9"><li>8–10 e-max veneers</li><li>Digital smile preview</li><li>Night guard included</li><li>3-year warranty</li></ul></div></div></div></div></section>
+<section id="faq" class="section" style="padding-top:20px"><div class="wrap split" style="align-items:flex-start">
+  <div><span class="sec-kick">Good to know</span><h2 class="sec-t">Questions, answered</h2><div class="faq"><details><summary>Do you accept insurance?</summary><p>Yes. We work with Daman, AXA, Cigna, MetLife and 20+ other insurers. Send us your card on WhatsApp and we will confirm your coverage before you come in.</p></details><details><summary>Is the consultation really AED 250 with the scan included?</summary><p>Yes, that is the complete first-visit price including 3D scan, X-rays and a written plan. No add-ons at the desk.</p></details><details><summary>How fast can I be seen for an emergency?</summary><p>We hold same-day emergency slots every morning. Message us before 10am and you will be seen the same day.</p></details><details><summary>Do you offer instalments?</summary><p>0% instalments over 6 months through Tabby and Tamara on any treatment above AED 2,000.</p></details></div></div>
+  <div class="img" style="min-height:300px">🪥</div></div></section>
+
+    <section id="contact" class="section contact-sec">
+      <div class="wrap grid2">
+        <div>
+          <h2 class="sec-t">Book your visit</h2>
+          <p class="sec-s">Same-day and next-day slots most days. Tell us what you need and we will confirm your time on WhatsApp within the hour.</p>
+          <div class="cinfo">
+            <div class="ci"><span class="ci-ic">📍</span><div><strong>Visit</strong><br>Suite 214, Building 27, Dubai Healthcare City, Dubai</div></div>
+            <div class="ci"><span class="ci-ic">📞</span><div><strong>Call</strong><br><a href="tel:+97145550921">+971 4 555 0921</a></div></div>
+            <div class="ci"><span class="ci-ic">✉️</span><div><strong>Email</strong><br><a href="mailto:hello@alnoordental.ae">hello@alnoordental.ae</a></div></div>
+            <div class="ci"><span class="ci-ic">🕒</span><div><strong>Hours</strong><br>Sat–Thu 9:00–20:00 · Fri closed</div></div>
+          </div>
+          <div class="trust-row">< s p a n   c l a s s = " t r u s t " > D H C C   l i c e n s e d   c l i n i c < / s p a n > < s p a n   c l a s s = " t r u s t " > I n s u r a n c e   d i r e c t   b i l l i n g < / s p a n > < s p a n   c l a s s = " t r u s t " > C l a s s - B   s t e r i l i s a t i o n < / s p a n > < s p a n   c l a s s = " t r u s t " > 0 %   i n s t a l m e n t s < / s p a n ></div>
+        </div>
+        <form class="book" onsubmit="event.preventDefault();this.style.display='none';document.getElementById('bok').style.display='block';">
+          <h3>Request an appointment</h3>
+          <input required placeholder="Full name"><input required type="tel" placeholder="Phone / WhatsApp"><select><option>General check-up</option><option>Implants</option><option>Veneers / smile design</option><option>Whitening</option><option>Orthodontics</option><option>Kids</option><option>Emergency / pain</option></select><textarea rows="3" placeholder="Anything we should know?"></textarea>
+          <button class="btn solid" type="submit">Request appointment</button>
+          <div id="bok" style="display:none">✅ Thank you! Our front desk will WhatsApp you within the hour to confirm your slot.</div>
+        </form>
+      </div>
+    </section>
+<footer><div class="wrap"><div><div class="fbrand">Al Noor <span>Dental</span></div><p style="margin-top:8px;max-width:340px">Al Noor Dental Studio is licensed by DHCC and led by internationally certified specialists in implantology and cosmetic dentistry.</p></div>
+<div><strong style="color:#fff">Quick links</strong><br><a href="#services">Treatments</a><a href="#about">The studio</a><a href="#pricing">Pricing</a><a href="#reviews">Reviews</a><a href="#faq">FAQ</a></div>
+<div><strong style="color:#fff">Reach us</strong><br>Suite 214, Building 27, Dubai Healthcare City, Dubai<br><a href="tel:+97145550921">+971 4 555 0921</a><br><a href="mailto:hello@alnoordental.ae">hello@alnoordental.ae</a></div></div>
+<div class="wrap" style="margin-top:26px;border-top:1px solid rgba(255,255,255,.12);padding-top:18px;font-size:12.5px">© 2026 Al Noor Dental Studio. All rights reserved.</div></footer>
+<a class="wa" href="https://wa.me/97145550921" target="_blank" rel="noopener" aria-label="WhatsApp">💬</a>
+<script>const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const el=e.target;const c0=el.dataset.c;const m=c0.match(/^[\d.,]+/);const t=m?+m[0].replace(/,/g,''):0;const suf=m?c0.slice(m[0].length):'';let n=0;const st=Math.max(1,Math.round(t/40));const iv=setInterval(()=>{n+=st;if(n>=t){n=t;clearInterval(iv)}el.textContent=(t>=1000?Math.round(n).toLocaleString():(t%1?n.toFixed(1):Math.round(n)))+suf},24);io.unobserve(el)}}),{threshold:.4});document.querySelectorAll('.num').forEach(el=>io.observe(el));</script>
+</body></html>
