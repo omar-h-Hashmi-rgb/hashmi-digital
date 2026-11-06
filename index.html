@@ -1023,5 +1023,17 @@ a.button>*,.btn>*{position:relative;z-index:1}
 :focus-visible{outline:2px solid rgba(124,140,255,.8);outline-offset:3px;border-radius:4px}
 @media (prefers-reduced-motion:reduce){.hero>*{animation:none}}
 </style>
+<style id="polish26d">
+::selection{background:rgba(124,140,255,.28);color:#fff}
+html{scroll-behavior:smooth}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:transparent}
+::-webkit-scrollbar-thumb{background:rgba(124,140,255,.25);border-radius:8px;border:2px solid transparent;background-clip:content-box}
+::-webkit-scrollbar-thumb:hover{background:rgba(124,140,255,.45);border:2px solid transparent;background-clip:content-box}
+section[id]{scroll-margin-top:84px}
+.work-card,.project-card{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s cubic-bezier(.2,.7,.2,1)}
+.work-card:hover,.project-card:hover{transform:translateY(-6px)}
+img{image-rendering:auto}
+</style>
 </body>
 </html>
