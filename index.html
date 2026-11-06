@@ -1048,5 +1048,16 @@ img{image-rendering:auto}
 @media (min-width:900px){h1{letter-spacing:-.045em}h2{letter-spacing:-.03em}}
 @media (prefers-reduced-motion:reduce){.nav a::after,.btn::after{transition:none}.work-card img,.project-card img,.client-card img,.card img{transition:none}}
 </style>
+<style id="polish26f-css">
+/* polish 26f: hero glow, quote styling, footer link slide, eyebrow type, section depth */
+header.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(640px 320px at 72% 18%,rgba(124,120,255,.09),transparent 70%),radial-gradient(520px 280px at 18% 78%,rgba(255,140,90,.05),transparent 70%);pointer-events:none;z-index:0}
+header.hero>*{position:relative;z-index:1}
+blockquote,.quote{border-left:2px solid rgba(255,255,255,.22);padding-left:1.25rem;font-style:italic}
+footer a{display:inline-block;transition:transform .3s cubic-bezier(.22,1,.36,1),opacity .3s}
+footer a:hover{transform:translateX(4px);opacity:.92}
+.eyebrow,.kicker,.section-label{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem}
+section{position:relative}
+@media (prefers-reduced-motion:reduce){footer a{transition:none}}
+</style>
 </body>
 </html>
