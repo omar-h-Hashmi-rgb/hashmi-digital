@@ -176,6 +176,17 @@ footer{border-top:1px solid rgba(141,123,255,.16)}
 a{text-decoration-thickness:1px;text-underline-offset:3px}
 @media (prefers-reduced-motion:reduce){.cwcard img{transition:none}}
 </style>
+<style id="polish22">
+/* polish pass 22: premium depth - headline gradient, card glow, sheen */
+header.hero h1,.dsec h1{background:linear-gradient(105deg,#f5f6ff 0%,#c9c2ff 55%,#8d7bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cwcard{position:relative;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.cwcard:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(141,123,255,.14)}
+.cwcard::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(120deg,rgba(141,123,255,.10),transparent 40%);opacity:0;transition:opacity .35s ease}
+.cwcard:hover::after{opacity:1}
+.cwlinks a{transition:transform .2s ease,opacity .2s ease}
+.cwlinks a:hover{transform:translateY(-2px);opacity:.9}
+@media (prefers-reduced-motion:reduce){.cwcard,.cwlinks a{transition:none}}
+</style>
 </head><body>
 <nav class="wrap"><span class="brand">Hashmi Digital</span><span class="cats"><a href="#cportfolio">Portfolio</a><a href="#ccommerce">Commerce</a><a href="#cbooking">Booking</a><a href="#cbusiness">Business</a><a href="#clocal">Local</a><a href="#crealestate">Real estate</a><a href="#csaas">SaaS</a><a href="#ceducation">Education</a></span><a href="#cdemos">Live sites</a></nav>
 <header class="hero"><div class="aurora" aria-hidden="true"></div><div class="wrap">

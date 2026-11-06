@@ -433,6 +433,20 @@ footer{border-top:1px solid rgba(141,123,255,.16);padding-top:2.2rem}
 .pcard .pbody h3{line-height:1.25}
 @media (prefers-reduced-motion:reduce){.plink,.chip{transition:none}}
 </style>
+<style id="polish22">
+/* polish pass 22: premium depth - gradient headline, card glow, button sheen */
+.hero h1,.dsec h1{background:linear-gradient(105deg,#f5f6ff 0%,#c9c2ff 55%,#8d7bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pcard{position:relative;border-radius:14px;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.pcard:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(141,123,255,.14),0 2px 8px rgba(0,0,0,.28)}
+.pcard::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(120deg,rgba(141,123,255,.10),transparent 40%);opacity:0;transition:opacity .35s ease}
+.pcard:hover::after{opacity:1}
+.btn,.btn-primary,.herocta a{position:relative;overflow:hidden;transition:transform .25s ease,box-shadow .25s ease}
+.btn:hover,.btn-primary:hover,.herocta a:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(141,123,255,.25)}
+.statin{border-left:2px solid rgba(141,123,255,.35);padding-left:14px}
+.sec{position:relative}
+.sec::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:linear-gradient(90deg,transparent,rgba(141,123,255,.22),transparent)}
+@media (prefers-reduced-motion:reduce){.pcard,.btn,.btn-primary,.herocta a{transition:none}}
+</style>
 </head>
 <body>
 <nav class="nav" id="top">
