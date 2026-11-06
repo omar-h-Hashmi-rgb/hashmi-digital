@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Client Web Design - 35 Website Concepts | Hashmi Digital</title>
+<meta name="description" content="35 client website concepts by Hashmi Digital, one unique cover per project across commerce, booking, SaaS, portfolio and local business lanes.">
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;box-sizing:border-box}
+body{background:#0b0d16;color:#e8eaf2;font-family:'Inter',system-ui,sans-serif;line-height:1.6}
+a{color:#8ea0ff;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+nav.wrap{position:sticky;top:0;z-index:50;display:flex;justify-content:space-between;align-items:center;padding:16px 24px;backdrop-filter:blur(14px) saturate(1.4);background:rgba(10,12,22,.72);border-bottom:1px solid rgba(255,255,255,.07)}
+nav .brand{font-family:'Sora',sans-serif;font-weight:800;font-size:18px;color:#fff}
+nav .cats{display:flex;gap:14px;flex-wrap:wrap;font-size:13px}
+nav .cats a{color:#aab3d0}
+nav .cats a:hover{color:#fff}
+header.hero{padding:90px 0 50px;text-align:center}
+.kick{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:#8ea0ff;margin-bottom:14px}
+h1{font-family:'Sora',sans-serif;font-size:clamp(34px,6vw,62px);line-height:1.08;letter-spacing:-.02em}
+h1 em{font-style:normal;background:linear-gradient(90deg,#8ea0ff,#ff8ac0);-webkit-background-clip:text;background-clip:text;color:transparent}
+.sub{max-width:640px;margin:18px auto 0;color:#aab3d0}
+.cwsec{padding:48px 0}
+.cwsechead{margin-bottom:26px}
+.cwkicker{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:#8ea0ff}
+.cwsechead h2{font-family:'Sora',sans-serif;font-size:26px;margin-top:6px}
+.cwsechead p{color:#8a93ad;font-size:14px}
+.cwgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:22px}
+.cwcard{border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s,box-shadow .45s}
+.cwcard:hover{transform:translateY(-6px);border-color:rgba(140,150,255,.45);box-shadow:0 24px 60px -20px rgba(80,90,255,.35)}
+.cwimg svg{display:block;width:100%;height:auto}
+.cwbody{padding:18px 20px 22px}
+.cwcat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8ea0ff;margin-bottom:6px}
+.cwbody h3{font-family:'Sora',sans-serif;font-size:19px;margin-bottom:6px}
+.cwbody p{color:#9aa2bd;font-size:14px}
+footer{padding:48px 0;text-align:center;color:#7d86a3;font-size:14px;border-top:1px solid rgba(255,255,255,.07);margin-top:40px}
+footer a{color:#8ea0ff}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+.cwimg{position:relative;overflow:hidden;aspect-ratio:16/10;}
+.cwimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
+
+/* premium pass 5 */
+:root{--pp5-ease:cubic-bezier(.2,.7,.2,1)}
+html{scroll-behavior:smooth}
+::selection{background:rgba(124,92,255,.35);color:#fff}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:rgba(255,255,255,.03)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#7c5cff,#22d3ee);border-radius:8px}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+h1,h2{font-family:'Sora','Inter',sans-serif;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,5.6vw,4.4rem);line-height:1.06}
+h2{font-size:clamp(1.7rem,3.4vw,2.7rem);line-height:1.12}
+.eyebrow,.kicker{letter-spacing:.32em;text-transform:uppercase;font-size:.72rem;font-weight:700}
+.navlinks a{position:relative;transition:color .25s var(--pp5-ease)}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1.5px;background:linear-gradient(90deg,#7c5cff,#22d3ee);transition:width .35s var(--pp5-ease)}
+.navlinks a:hover::after{width:100%}
+.card,.proj,.proj-card,.site-card,.work-card{transition:transform .5s var(--pp5-ease),box-shadow .5s var(--pp5-ease),border-color .4s ease;will-change:transform}
+.card:hover,.proj:hover,.proj-card:hover,.site-card:hover,.work-card:hover{transform:translateY(-7px);box-shadow:0 24px 60px -18px rgba(124,92,255,.35),0 0 0 1px rgba(124,92,255,.25)}
+.card img,.proj img,.proj-card img,.site-card img{transition:transform .7s var(--pp5-ease),filter .5s ease}
+.card:hover img,.proj:hover img,.proj-card:hover img,.site-card:hover img{transform:scale(1.055);filter:saturate(1.08)}
+.btn,.cta,button{position:relative;overflow:hidden;transition:transform .3s var(--pp5-ease),box-shadow .3s var(--pp5-ease)}
+.btn:hover,.cta:hover,button:hover{transform:translateY(-2px);box-shadow:0 14px 34px -10px rgba(124,92,255,.5)}
+.btn::before,.cta::before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 30%,rgba(255,255,255,.22) 50%,transparent 70%);transform:translateX(-120%);transition:transform .8s var(--pp5-ease)}
+.btn:hover::before,.cta:hover::before{transform:translateX(120%)}
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s var(--pp5-ease),transform .8s var(--pp5-ease)}
+.reveal.in{opacity:1;transform:none}
+.reveal.d1{transition-delay:.07s}.reveal.d2{transition-delay:.14s}.reveal.d3{transition-delay:.21s}.reveal.d4{transition-delay:.28s}.reveal.d5{transition-delay:.35s}
+section{scroll-margin-top:96px}
+@media (prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}.card:hover,.proj:hover,.proj-card:hover{transform:none}}
+
+
+/* premium pass 7 */
+#ppro{position:fixed;top:0;left:0;height:2.5px;width:0;z-index:99;
+ background:linear-gradient(90deg,#6d5cff,#c86bff,#5cd6ff);box-shadow:0 0 12px rgba(124,92,255,.55)}
+
+</style><!-- premium pass 5 -->
+
+<style>
+/* premium pass 6: motion + depth */
+html{scroll-behavior:smooth}
+body{-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+.cwcard{transition:transform .45s cubic-bezier(.2,.7,.2,1),box-shadow .45s cubic-bezier(.2,.7,.2,1)}
+.cwcard:hover{transform:translateY(-8px);box-shadow:0 24px 60px rgba(10,15,40,.18)}
+.cwimg{overflow:hidden;border-radius:16px}
+.cwimg img{transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.cwcard:hover .cwimg img{transform:scale(1.06)}
+.cwimg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,0) 55%,rgba(8,12,28,.35) 100%);opacity:0;transition:opacity .45s ease;pointer-events:none}
+.cwcard:hover .cwimg::after{opacity:1}
+.cwsechead{letter-spacing:-.01em}
+@media (prefers-reduced-motion:reduce){.cwcard,.cwimg img{transition:none}}
+</style>
+<style id="pp8">/* premium pass 8 */
+html{scroll-behavior:smooth}
+h1,h2{letter-spacing:-.02em}
+nav.glassy,.nav.glassy{backdrop-filter:blur(14px) saturate(160%);background:rgba(10,12,18,.55)}
+.pcard{transition:transform .5s cubic-bezier(.2,.8,.2,1),box-shadow .5s}
+.pcard:hover{transform:translateY(-8px) scale(1.01)}
+.pimg img{transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.pcard:hover .pimg img{transform:scale(1.06)}
+.catlbl{letter-spacing:.14em}
+::selection{background:rgba(120,140,255,.35)}
+</style>
+<style id="pp10">/* premium pass 10 */
+*{scrollbar-width:thin;scrollbar-color:rgba(109,92,255,.45) #0b0b12}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-track{background:#0b0b12}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#6d5cff,#b44cff);border-radius:8px;border:2px solid #0b0b12}
+h2,h3{letter-spacing:-.015em}
+.reveal{transition:opacity .7s cubic-bezier(.2,.8,.2,1),transform .7s cubic-bezier(.2,.8,.2,1),filter .7s cubic-bezier(.2,.8,.2,1);filter:blur(6px)}
+.reveal.in{filter:blur(0)}
+#totop{position:fixed;right:22px;bottom:22px;z-index:60;width:44px;height:44px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:rgba(16,16,26,.85);backdrop-filter:blur(12px);color:#cfc7ff;display:grid;place-items:center;font-size:1.05rem;cursor:pointer;opacity:0;transform:translateY(12px);transition:.35s cubic-bezier(.2,.8,.2,1);box-shadow:0 10px 30px -10px rgba(109,92,255,.35)}
+#totop.on{opacity:1;transform:translateY(0)}
+#totop:hover{background:rgba(109,92,255,.28);color:#fff;border-color:rgba(141,110,255,.5)}
+@media (prefers-reduced-motion:reduce){.reveal{filter:none;transition:none}.aurora{animation:none}}
+
+.aurora{position:absolute;inset:-20%;z-index:1;pointer-events:none;overflow:hidden}
+.aurora::before,.aurora::after{content:"";position:absolute;width:42vw;height:42vw;border-radius:50%;filter:blur(90px);opacity:.2}
+.aurora::before{background:radial-gradient(circle at 30% 30%,#6d5cff,transparent 70%);top:-8%;left:-6%;animation:ad1 26s ease-in-out infinite alternate}
+.aurora::after{background:radial-gradient(circle at 70% 70%,#b44cff,transparent 70%);bottom:-14%;right:-8%;animation:ad2 32s ease-in-out infinite alternate}
+@keyframes ad1{to{transform:translate(9vw,7vh) scale(1.15)}}
+@keyframes ad2{to{transform:translate(-8vw,-6vh) scale(1.1)}}
+.cats a{position:relative}
+.cats a::after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:1.5px;background:linear-gradient(90deg,#6d5cff,#b44cff);transition:right .35s cubic-bezier(.2,.8,.2,1)}
+.cats a:hover::after{right:0}
+.cwcard{box-shadow:0 0 0 1px rgba(255,255,255,.045) inset}
+.cwcard:hover{box-shadow:0 0 0 1px rgba(141,110,255,.35) inset,0 24px 60px -22px rgba(109,92,255,.4)}
+.cwimg{overflow:hidden;border-radius:10px}
+.cwimg img:hover{filter:brightness(1.06) saturate(1.05)}
+.cwkicker{position:relative}
+.cwkicker::after{content:"";position:absolute;left:0;bottom:-7px;width:30px;height:2px;border-radius:2px;background:linear-gradient(90deg,#6d5cff,#b44cff);opacity:.8}
+</style>
+<style id="pp11">
+/* premium pass 11 */
+.pp11spot{position:fixed;left:0;top:0;width:540px;height:540px;border-radius:50%;pointer-events:none;z-index:0;background:radial-gradient(closest-side,rgba(124,92,255,.10),rgba(34,211,238,.05) 45%,transparent 72%);mix-blend-mode:screen}
+body::after{content:"";position:fixed;inset:0;pointer-events:none;z-index:1;opacity:.045;background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2'/></filter><rect width='100%25' height='100%25' filter='url(%23n)'/></svg>");background-size:160px 160px}
+main,nav,header,footer,section{position:relative;z-index:2}
+nav.scrolled{background:rgba(10,12,24,.74);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);border-bottom:1px solid rgba(255,255,255,.08);box-shadow:0 12px 40px -18px rgba(0,0,0,.65);transition:background .4s,box-shadow .4s}
+.r11{opacity:0;transform:translateY(24px) scale(.985);transition:opacity .75s cubic-bezier(.2,.7,.2,1),transform .75s cubic-bezier(.2,.7,.2,1)}
+.r11in{opacity:1;transform:none}
+.pcard,.cwcard,.dcard{--mx:50%;--my:50%;position:relative}
+.pcard::after,.cwcard::after,.dcard::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;opacity:0;transition:opacity .45s;background:radial-gradient(440px circle at var(--mx) var(--my),rgba(140,150,255,.15),transparent 55%);z-index:3}
+.pcard:hover::after,.cwcard:hover::after,.dcard:hover::after{opacity:1}
+.pimg img,.cwimg img{transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.pcard:hover .pimg img,.cwcard:hover .cwimg img{transform:scale(1.07)}
+h1{font-size:clamp(34px,5.2vw,58px);letter-spacing:-.02em;line-height:1.06}
+h2{font-size:clamp(26px,3.4vw,40px);letter-spacing:-.015em}
+.navlinks a{position:relative}
+.navlinks a::after{content:"";position:absolute;left:0;bottom:-5px;height:2px;width:100%;border-radius:2px;background:linear-gradient(90deg,#7c5cff,#22d3ee);transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.7,.2,1)}
+.navlinks a:hover::after{transform:scaleX(1)}
+footer::before{content:"";position:absolute;left:8%;right:8%;top:-1px;height:1px;background:linear-gradient(90deg,transparent,rgba(124,92,255,.55),rgba(34,211,238,.55),transparent)}
+.dsec{padding:70px 0}
+.dhead{display:flex;align-items:end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:28px}
+.dhead h2{margin:0}
+.dhead p{color:#8a93ad;font-size:14px;margin:6px 0 0}
+.dbadge{font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:#0b0e1c;background:linear-gradient(90deg,#7c5cff,#22d3ee);padding:7px 14px;border-radius:999px}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:20px}
+.dcard{border:1px solid rgba(255,255,255,.09);border-radius:18px;overflow:hidden;background:linear-gradient(180deg,rgba(255,255,255,.05),rgba(255,255,255,.02));transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .45s,box-shadow .45s}
+.dcard:hover{transform:translateY(-6px);border-color:rgba(140,150,255,.45);box-shadow:0 24px 60px -20px rgba(80,90,255,.35)}
+.dcover{position:relative;aspect-ratio:16/10;display:flex;align-items:center;justify-content:center;background:radial-gradient(120% 120% at 15% 20%,var(--c1) 0%,transparent 58%),radial-gradient(120% 120% at 85% 80%,var(--c2) 0%,transparent 58%),linear-gradient(140deg,#0b0e1c,#131832);overflow:hidden}
+.dcover::before{content:"";position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.06) 0 1px,transparent 1px 26px),repeating-linear-gradient(90deg,rgba(255,255,255,.06) 0 1px,transparent 1px 26px);-webkit-mask-image:radial-gradient(80% 80% at 50% 42%,#000,transparent 78%);mask-image:radial-gradient(80% 80% at 50% 42%,#000,transparent 78%)}
+.dcover::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(0,0,0,.45));opacity:.7}
+.dmono{font-family:'Sora',sans-serif;font-weight:800;font-size:clamp(38px,5vw,60px);letter-spacing:-.03em;color:#fff;opacity:.94;text-shadow:0 18px 50px rgba(0,0,0,.5);position:relative;z-index:2}
+.dbody{padding:16px 18px 20px}
+.dcat{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:#8ea0ff;margin-bottom:6px}
+.dbody h3{font-family:'Sora',sans-serif;font-size:17px;margin-bottom:12px}
+.dlive{display:inline-flex;align-items:center;gap:6px;font-size:13px;font-weight:600;color:#c7c9ff;border:1px solid rgba(140,150,255,.35);border-radius:999px;padding:7px 14px;text-decoration:none;transition:background .3s,border-color .3s,color .3s,transform .3s}
+.dlive:hover{background:rgba(124,92,255,.2);border-color:rgba(140,150,255,.75);color:#fff;transform:translateY(-1px)}
+.cwlinks{margin-top:12px}
+@media (prefers-reduced-motion:reduce){.pp11spot{display:none}.r11{opacity:1;transform:none}}
+</style>
+<style id="polish21">
+/* polish pass 21: type pairing + cohesion with index */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap');
+h1,h2,.dmono{font-family:'Fraunces','Sora',Georgia,serif;font-optical-sizing:auto;letter-spacing:-.02em;text-wrap:balance}
+footer{border-top:1px solid rgba(141,123,255,.16)}
+.kicker,.sec-label{letter-spacing:.22em}
+.cwcard:hover img{transform:scale(1.045)}
+a{text-decoration-thickness:1px;text-underline-offset:3px}
+@media (prefers-reduced-motion:reduce){.cwcard img{transition:none}}
+</style>
+<style id="polish22">
+/* polish pass 22: premium depth - headline gradient, card glow, sheen */
+header.hero h1,.dsec h1{background:linear-gradient(105deg,#f5f6ff 0%,#c9c2ff 55%,#8d7bff 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cwcard{position:relative;transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease}
+.cwcard:hover{transform:translateY(-4px);box-shadow:0 18px 48px rgba(141,123,255,.14)}
+.cwcard::after{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;background:linear-gradient(120deg,rgba(141,123,255,.10),transparent 40%);opacity:0;transition:opacity .35s ease}
+.cwcard:hover::after{opacity:1}
+.cwlinks a{transition:transform .2s ease,opacity .2s ease}
+.cwlinks a:hover{transform:translateY(-2px);opacity:.9}
+@media (prefers-reduced-motion:reduce){.cwcard,.cwlinks a{transition:none}}
+</style>
+<style id="polish23">
+:root{--ink:#0b0b12;}
+html{scroll-behavior:smooth;}
+body{text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;}
+h1,h2,h3{letter-spacing:-0.02em;}
+.eyebrow,.eyebrow-label,.section-label{letter-spacing:0.22em;text-transform:uppercase;}
+section{position:relative;}
+section+section::before{content:"";position:absolute;top:0;left:6%;right:6%;height:1px;background:linear-gradient(90deg,transparent,rgba(255,255,255,0.10),transparent);}
+a:focus-visible,button:focus-visible{outline:2px solid rgba(139,92,246,0.6);outline-offset:3px;border-radius:6px;}
+.card,.project-card,[class*="card"]{transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s cubic-bezier(.16,1,.3,1);will-change:transform;}
+.card:hover,.project-card:hover{transform:translateY(-6px) scale(1.008);box-shadow:0 24px 60px -18px rgba(88,60,220,0.38),0 2px 0 rgba(255,255,255,0.05) inset;}
+img{transition:filter .6s ease;}
+.card:hover img{filter:brightness(1.06) saturate(1.08);}
+::selection{background:rgba(139,92,246,0.35);color:#fff;}
+@media (prefers-reduced-motion:reduce){*{animation-duration:.01ms !important;transition-duration:.01ms !important;}}
+</style>
+<style id="polish24">
+@keyframes riseIn{from{opacity:0;transform:translateY(18px);}to{opacity:1;transform:translateY(0);}}
+h1,h2{animation:riseIn .7s cubic-bezier(.16,1,.3,1) both;}
+h2{animation-delay:.08s;}
+.card,.project-card,[class*="card"]{border-radius:14px;}
+p{line-height:1.7;}
+strong{font-weight:600;}
+.nav,.navbar,header nav a{position:relative;}
+.nav a:after,.navbar a:after{content:"";position:absolute;left:0;bottom:-4px;width:0;height:1px;background:linear-gradient(90deg,#8b5cf6,#60a5fa);transition:width .35s cubic-bezier(.16,1,.3,1);}
+.nav a:hover:after,.navbar a:hover:after{width:100%;}
+body{background-image:radial-gradient(ellipse 80% 50% at 20% -10%,rgba(88,60,220,0.10),transparent),radial-gradient(ellipse 60% 40% at 90% 10%,rgba(56,120,255,0.07),transparent);background-attachment:fixed;}
+</style>
+
+<style id="polish25">
+html { scroll-behavior: smooth; }
+::selection { background: #7c3aed; color: #fff; }
+:where(h1, h2, h3) { letter-spacing: -0.02em; text-wrap: balance; }
+:where(p, li) { text-wrap: pretty; }
+:where(header) { backdrop-filter: saturate(150%) blur(14px); -webkit-backdrop-filter: saturate(150%) blur(14px); }
+:where(a) { transition: color .25s ease, opacity .25s ease; }
+:where(button, [class*="btn"], a[class*="button"]) { transition: transform .25s cubic-bezier(.2,.7,.2,1), box-shadow .25s ease, background .25s ease; }
+:where(button:hover, [class*="btn"]:hover, a[class*="button"]:hover) { transform: translateY(-2px); box-shadow: 0 12px 30px -12px rgba(124,58,237,.45); }
+:where(img) { will-change: transform; }
+body::after { content: ""; position: fixed; inset: 0; pointer-events: none; z-index: 1; background: radial-gradient(120% 90% at 50% 0%, transparent 55%, rgba(2,6,23,.28) 100%); mix-blend-mode: multiply; }
+#fo-scroll-progress { position: fixed; top: 0; left: 0; height: 2px; width: 0; z-index: 2147483647; background: linear-gradient(90deg, #7c3aed, #06b6d4); transition: width .12s linear; border-radius: 0 2px 2px 0; }
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  :where(*) { transition-duration: .01ms !important; animation-duration: .01ms !important; }
+}
+</style>
+<script id="polish25-js">
+(function () {
+  var bar = document.createElement('div');
+  bar.id = 'fo-scroll-progress';
+  document.body.appendChild(bar);
+  var update = function () {
+    var h = document.documentElement;
+    var max = h.scrollHeight - h.clientHeight;
+    bar.style.width = (max > 0 ? (h.scrollTop / max) * 100 : 0) + '%';
+  };
+  addEventListener('scroll', update, { passive: true });
+  addEventListener('resize', update);
+  update();
+})();
+</script>
+</head><body>
+<nav class="wrap"><span class="brand">Hashmi Digital</span><span class="cats"><a href="#cportfolio">Portfolio</a><a href="#ccommerce">Commerce</a><a href="#cbooking">Booking</a><a href="#cbusiness">Business</a><a href="#clocal">Local</a><a href="#crealestate">Real estate</a><a href="#csaas">SaaS</a><a href="#ceducation">Education</a></span><a href="#cdemos">Live sites</a></nav>
+<header class="hero"><div class="aurora" aria-hidden="true"></div><div class="wrap">
+<p class="kick">Client Web Design</p>
+<h1>35 website concepts.<br><em>One unique cover each.</em></h1>
+<p class="sub">Every project below carries its own distinct cover art, no repeats: commerce, booking, SaaS, portfolio and local business lanes, each designed around how that client actually sells.</p>
+</div></header>
+<main class="wrap"><section class="cwsec" id="cportfolio"><div class="cwsechead"><span class="cwkicker">Portfolio</span><h2>Portfolio websites</h2><p>5 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="lumina-interiors.jpg" alt="Lumina Interiors website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Interior design studio</div><h3>Lumina Interiors</h3><p>Elegant serif layout with room galleries</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-lumina-interiors.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="solstice-events.jpg" alt="Solstice Events website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Wedding planning studio</div><h3>Solstice Events</h3><p>Romantic editorial gallery with RSVP flow</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-solstice-events.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="lumen-studio.jpg" alt="Lumen Studio website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Photography portfolio</div><h3>Lumen Studio</h3><p>Minimal fullscreen galleries with lightbox</p><div class="cwlinks"><a class="dlive" href="https://aurelia-studio-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="terra-landscapes.jpg" alt="Terra Landscapes website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Garden design studio</div><h3>Terra Landscapes</h3><p>Seasonal project grid with garden tours</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-terra-landscapes.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="aria-interiors.jpg" alt="Aria Interiors website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Luxury staging</div><h3>Aria Interiors</h3><p>Before/after sliders with property stats</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-aria-interiors.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="ccommerce"><div class="cwsechead"><span class="cwkicker">Commerce</span><h2>Commerce websites</h2><p>5 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="sahara-coffee-roasters.jpg" alt="Sahara Coffee Roasters website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Specialty coffee brand</div><h3>Sahara Coffee Roasters</h3><p>Warm product grid with roast profiles</p><div class="cwlinks"><a class="dlive" href="https://ember-coffeehouse-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="petal-stem.jpg" alt="Petal & Stem website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Florist online shop</div><h3>Petal & Stem</h3><p>Seasonal collections with soft pastel art</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-petal-stem.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="fable-books.jpg" alt="Fable Books website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Indie bookstore</div><h3>Fable Books</h3><p>Cozy catalogue with author spotlights</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-fable-books.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="cocoa-rye.jpg" alt="Cocoa & Rye website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Artisan bakery</div><h3>Cocoa & Rye</h3><p>Menu-first layout with daily bakes feed</p><div class="cwlinks"><a class="dlive" href="https://flour-and-fig-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="willow-loom.jpg" alt="Willow & Loom website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Handmade textiles</div><h3>Willow & Loom</h3><p>Craft-story product pages with artisan bios</p><div class="cwlinks"><a class="dlive" href="https://maison-cedar-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="cbooking"><div class="cwsechead"><span class="cwkicker">Booking</span><h2>Booking websites</h2><p>5 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="medaxis-health.jpg" alt="MedAxis Health website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Clinic booking platform</div><h3>MedAxis Health</h3><p>Calm appointment flow with doctor profiles</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-medaxis-health.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="harbor-dental.jpg" alt="Harbor Dental website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Dental practice</div><h3>Harbor Dental</h3><p>Friendly booking flow with before/after cases</p><div class="cwlinks"><a class="dlive" href="https://al-noor-dental-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="bluewave-marine.jpg" alt="Bluewave Marine website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Yacht charter service</div><h3>Bluewave Marine</h3><p>Oceanic hero with charter calendar</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-bluewave-marine.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="pulse-physio.jpg" alt="Pulse Physio website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Physiotherapy clinic</div><h3>Pulse Physio</h3><p>Rehab program pages with slot booking</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-pulse-physio.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="halo-med-spa.jpg" alt="Halo Med Spa website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Aesthetic clinic</div><h3>Halo Med Spa</h3><p>Glow-focused design with treatment gallery</p><div class="cwlinks"><a class="dlive" href="https://halcyon-skincare-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="cbusiness"><div class="cwsechead"><span class="cwkicker">Business</span><h2>Business websites</h2><p>6 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="vertex-law.jpg" alt="Vertex Law website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Corporate law firm</div><h3>Vertex Law</h3><p>Authority-first layout with case results</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-vertex-law.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="atlas-freight.jpg" alt="Atlas Freight website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Logistics company</div><h3>Atlas Freight</h3><p>Route map hero with shipment tracker</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-atlas-freight.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="vantage-legal.jpg" alt="Vantage Legal website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Immigration law</div><h3>Vantage Legal</h3><p>Clear process steps with consult booking</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-vantage-legal.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="everline-builders.jpg" alt="Everline Builders website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Construction firm</div><h3>Everline Builders</h3><p>Project timeline with safety certifications</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-everline-builders.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="bastion-security.jpg" alt="Bastion Security website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Corporate security</div><h3>Bastion Security</h3><p>Personnel trust layout with contact desk</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-bastion-security.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="northstar-legal.jpg" alt="Northstar Legal website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Startup counsel</div><h3>Northstar Legal</h3><p>Flat-fee packages with founder FAQs</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-northstar-legal.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="clocal"><div class="cwsechead"><span class="cwkicker">Local</span><h2>Local websites</h2><p>7 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="aurora-fitness.jpg" alt="Aurora Fitness website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Boutique gym memberships</div><h3>Aurora Fitness</h3><p>Bold class schedule with trainer cards</p><div class="cwlinks"><a class="dlive" href="https://ironpeak-fitness-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="peak-adventures.jpg" alt="Peak Adventures website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Trek and tour operator</div><h3>Peak Adventures</h3><p>Full-bleed trail photos with booking tiers</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-peak-adventures.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="kindred-care.jpg" alt="Kindred Care website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Eldercare services</div><h3>Kindred Care</h3><p>Warm trust-first layout with care plans</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-kindred-care.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="orbit-coworking.jpg" alt="Orbit Coworking website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Coworking spaces</div><h3>Orbit Coworking</h3><p>Space galleries with membership tiers</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-orbit-coworking.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="saffron-table.jpg" alt="Saffron Table website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Fine dining restaurant</div><h3>Saffron Table</h3><p>Menu-led design with reservation flow</p><div class="cwlinks"><a class="dlive" href="https://bab-al-bahr-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="marigold-spa.jpg" alt="Marigold Spa website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Wellness and spa</div><h3>Marigold Spa</h3><p>Serene booking flow with treatment menus</p><div class="cwlinks"><a class="dlive" href="https://lumiere-lounge-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="wander-wheels.jpg" alt="Wander Wheels website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Camper van rentals</div><h3>Wander Wheels</h3><p>Map-based fleet browser with rates</p><div class="cwlinks"><a class="dlive" href="https://velar-motors-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="crealestate"><div class="cwsechead"><span class="cwkicker">Real estate</span><h2>Real estate websites</h2><p>1 concept in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="meridian-realty.jpg" alt="Meridian Realty website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Luxury real estate listings</div><h3>Meridian Realty</h3><p>Map-led listing grid with gallery tours</p><div class="cwlinks"><a class="dlive" href="https://marina-estates-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="csaas"><div class="cwsechead"><span class="cwkicker">SaaS</span><h2>SaaS websites</h2><p>4 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="novadev-labs.jpg" alt="NovaDev Labs website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Software agency site</div><h3>NovaDev Labs</h3><p>Dark dev-studio aesthetic with project reels</p><div class="cwlinks"><a class="dlive" href="https://mira-ai-labs-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="cirrus-analytics.jpg" alt="Cirrus Analytics website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Data consultancy</div><h3>Cirrus Analytics</h3><p>Dashboard-style landing with live charts</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-cirrus-analytics.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="hexa-cyber.jpg" alt="Hexa Cyber website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Security consulting</div><h3>Hexa Cyber</h3><p>Dark tech aesthetic with threat feeds</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-hexa-cyber.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="quantify-risk.jpg" alt="Quantify Risk website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Insurance analytics</div><h3>Quantify Risk</h3><p>Comparison tables with plan finder</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-quantify-risk.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section><section class="cwsec" id="ceducation"><div class="cwsechead"><span class="cwkicker">Education</span><h2>Education websites</h2><p>2 concepts in this lane</p></div><div class="cwgrid"><article class="cwcard"><div class="cwimg"><img src="zenith-tutoring.jpg" alt="Zenith Tutoring website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">Exam prep academy</div><h3>Zenith Tutoring</h3><p>Course cards with results wall</p><div class="cwlinks"><a class="dlive" href="https://excelia-learning-demo.netlify.app" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article><article class="cwcard"><div class="cwimg"><img src="crest-academy.jpg" alt="Crest Academy website concept cover" loading="lazy" decoding="async" width="640" height="400"></div><div class="cwbody"><div class="cwcat">International school</div><h3>Crest Academy</h3><p>Campus tours with admission portal</p><div class="cwlinks"><a class="dlive" href="https://omar-h-hashmi-rgb.github.io/hashmi-digital/demo-crest-academy.html" target="_blank" rel="noopener">Live demo &#8599;</a></div></div></article></div></section></main>
+<section class="dsec" id="cdemos">
+  <div class="wrap">
+    <div class="dhead"><div><h2>Live client sites</h2><p>Real websites, built and deployed end to end. Every card opens the live site.</p></div><span class="dbadge">26 live</span></div>
+    <div class="dgrid">
+<article class="dcard"><div class="dcover" style="--c1:#f59e0b;--c2:#7c2d12"><span class="dmono">BA</span></div><div class="dbody"><div class="dcat">Fine dining restaurant</div><h3>Bab Al Bahr</h3><a class="dlive" href="https://bab-al-bahr-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#f0abfc;--c2:#6b21a8"><span class="dmono">LU</span></div><div class="dbody"><div class="dcat">Salon & spa</div><h3>Lumiere Beauty Lounge</h3><a class="dlive" href="https://lumiere-lounge-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#38bdf8;--c2:#0c4a6e"><span class="dmono">ME</span></div><div class="dbody"><div class="dcat">Luxury real estate</div><h3>Marina Estates</h3><a class="dlive" href="https://marina-estates-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#34d399;--c2:#155e75"><span class="dmono">AN</span></div><div class="dbody"><div class="dcat">Dental clinic</div><h3>Al Noor Dental Studio</h3><a class="dlive" href="https://al-noor-dental-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#ef4444;--c2:#7f1d1d"><span class="dmono">IP</span></div><div class="dbody"><div class="dcat">Gym & strength club</div><h3>Iron Peak Fitness</h3><a class="dlive" href="https://ironpeak-fitness-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#94a3b8;--c2:#1e293b"><span class="dmono">MA</span></div><div class="dbody"><div class="dcat">Car service & repair</div><h3>Meridian Auto Works</h3><a class="dlive" href="https://meridian-auto-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#d97706;--c2:#78350f"><span class="dmono">EC</span></div><div class="dbody"><div class="dcat">Cafe & coffee bar</div><h3>Ember Coffee House</h3><a class="dlive" href="https://ember-coffeehouse-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#cbd5e1;--c2:#334155"><span class="dmono">AS</span></div><div class="dbody"><div class="dcat">Photography studio</div><h3>Aurelia Studio</h3><a class="dlive" href="https://aurelia-studio-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#fbbf24;--c2:#78350f"><span class="dmono">FF</span></div><div class="dbody"><div class="dcat">Artisan bakery</div><h3>Flour & Fig</h3><a class="dlive" href="https://flour-and-fig-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#d6bd8f;--c2:#4a3520"><span class="dmono">MC</span></div><div class="dbody"><div class="dcat">Luxury furniture</div><h3>Maison Cedar</h3><a class="dlive" href="https://maison-cedar-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#818cf8;--c2:#312e81"><span class="dmono">EL</span></div><div class="dbody"><div class="dcat">Tutoring & exam prep</div><h3>Excelia Learning</h3><a class="dlive" href="https://excelia-learning-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#22d3ee;--c2:#1e1b4b"><span class="dmono">VA</span></div><div class="dbody"><div class="dcat">Premium audio</div><h3>Vanta Audio</h3><a class="dlive" href="https://vanta-audio-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#fcd34d;--c2:#713f12"><span class="dmono">AH</span></div><div class="dbody"><div class="dcat">Luxury watches</div><h3>Aurum Horology</h3><a class="dlive" href="https://aurum-horology-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#f472b6;--c2:#4a044e"><span class="dmono">NP</span></div><div class="dbody"><div class="dcat">Fragrance house</div><h3>Noir Parfums</h3><a class="dlive" href="https://noir-parfums-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#a3a3a3;--c2:#0c0a09"><span class="dmono">VM</span></div><div class="dbody"><div class="dcat">Luxury automotive</div><h3>Velar Motors</h3><a class="dlive" href="https://velar-motors-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#fb7185;--c2:#881337"><span class="dmono">KR</span></div><div class="dbody"><div class="dcat">Running shoes</div><h3>Koda Runners</h3><a class="dlive" href="https://koda-runners-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#60a5fa;--c2:#1e3a8a"><span class="dmono">OW</span></div><div class="dbody"><div class="dcat">Smart wearables</div><h3>Orbit Wearables</h3><a class="dlive" href="https://orbit-wearables-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#5eead4;--c2:#134e4a"><span class="dmono">HS</span></div><div class="dbody"><div class="dcat">Skincare</div><h3>Halcyon Skincare</h3><a class="dlive" href="https://halcyon-skincare-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#67e8f9;--c2:#164e63"><span class="dmono">SD</span></div><div class="dbody"><div class="dcat">Consumer drones</div><h3>Stratos Drone</h3><a class="dlive" href="https://stratos-drone-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#a78bfa;--c2:#4c1d95"><span class="dmono">ML</span></div><div class="dbody"><div class="dcat">AI tools</div><h3>Mira AI Labs</h3><a class="dlive" href="https://mira-ai-labs-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#fdba74;--c2:#7c2d12"><span class="dmono">AL</span></div><div class="dbody"><div class="dcat">Travel luggage</div><h3>Atlas Luggage</h3><a class="dlive" href="https://atlas-luggage-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#fde047;--c2:#713f12"><span class="dmono">SE</span></div><div class="dbody"><div class="dcat">Eyewear</div><h3>Solis Eyewear</h3><a class="dlive" href="https://solis-eyewear-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#e7c6a1;--c2:#5c3a1e"><span class="dmono">FO</span></div><div class="dbody"><div class="dcat">Furniture</div><h3>Forma Furniture</h3><a class="dlive" href="https://forma-furniture-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#c084fc;--c2:#581c87"><span class="dmono">ZS</span></div><div class="dbody"><div class="dcat">Audio</div><h3>Zenith Sound</h3><a class="dlive" href="https://zenith-sound-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#4ade80;--c2:#14532d"><span class="dmono">VC</span></div><div class="dbody"><div class="dcat">Bicycles</div><h3>Velo Cycles</h3><a class="dlive" href="https://velo-cycles-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+<article class="dcard"><div class="dcover" style="--c1:#fef08a;--c2:#854d0e"><span class="dmono">LM</span></div><div class="dbody"><div class="dcat">Lighting</div><h3>Lumen Lighting</h3><a class="dlive" href="https://lumen-lighting-demo.netlify.app" target="_blank" rel="noopener">Open live site &#8599;</a></div></article>
+    </div>
+  </div>
+</section>
+<footer class="wrap">Client Web Design showcase, Hashmi Digital. <a href="index.html">Back to the main site</a></footer>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.style.opacity=1;e.target.style.transform='none';io.unobserve(e.target)}}),{threshold:.1});
+document.querySelectorAll('.cwcard').forEach((c,i)=>{c.style.opacity=0;c.style.transform='translateY(24px)';c.style.transition=`opacity .7s ${Math.min(i%6,.5)}s ease,transform .7s ${Math.min(i%6,.5)}s ease`;io.observe(c)});
+</script>
+
+<script>
+/* premium pass 5 */
+(function(){
+  var sel='.card,.proj,.proj-card,.site-card,.work-card,section .grid>*,.stats>*,section>h2,section>.eyebrow,section>.kicker';
+  var els=[].slice.call(document.querySelectorAll(sel)).filter(function(e){return !e.classList.contains('reveal')});
+  els.forEach(function(e,i){e.classList.add('reveal');var d=(i%5);if(d)e.classList.add('d'+d);});
+  if('IntersectionObserver' in window && !window.matchMedia('(prefers-reduced-motion: reduce)').matches){
+    var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target);}})},{threshold:.12,rootMargin:'0px 0px -40px 0px'});
+    els.forEach(function(e){io.observe(e)});
+  } else { els.forEach(function(e){e.classList.add('in')}); }
+})();
+</script>
+
+
+<script>
+(function(){var b=document.createElement('div');b.id='ppro';document.body.appendChild(b);
+var u=function(){var h=document.documentElement;var p=h.scrollTop/((h.scrollHeight-h.clientHeight)||1);b.style.width=(p*100)+'%';};
+addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u();})();
+</script>
+
+<script id="pp8js">/* premium pass 8 */
+addEventListener('scroll',function(){document.querySelectorAll('nav,.nav,header').forEach(function(e){e.classList.toggle('glassy',window.scrollY>40)})},{passive:true});
+</script>
+<script id="pp10js">
+(function(){
+var b=document.createElement('button');b.id='totop';b.setAttribute('aria-label','Back to top');b.innerHTML='\u2191';document.body.appendChild(b);
+var u=function(){b.classList.toggle('on',window.scrollY>700)};
+addEventListener('scroll',u,{passive:true});u();
+b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});
+})();
+(function(){
+var links=[].slice.call(document.querySelectorAll('.navlinks a,.cats a'));
+if(!links.length)return;
+var targets=links.map(function(a){return document.getElementById((a.getAttribute('href')||'').replace('#',''))}).filter(Boolean);
+if(!targets.length||!('IntersectionObserver' in window))return;
+var io=new IntersectionObserver(function(en){en.forEach(function(x){if(x.isIntersecting){links.forEach(function(l){l.classList.toggle('act',l.getAttribute('href')==='#'+x.target.id)})}})},{rootMargin:'-40% 0px -55% 0px'});
+targets.forEach(function(t){io.observe(t)});
+})();
+</script>
+
+<script id="pp11s">
+(function(){
+  var d=document;
+  var still=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!still){
+    if(matchMedia('(pointer:fine)').matches){
+      var s=d.createElement('div');s.className='pp11spot';s.setAttribute('aria-hidden','true');d.body.appendChild(s);
+      var x=innerWidth/2,y=innerHeight/2,tx=x,ty=y;
+      addEventListener('pointermove',function(e){tx=e.clientX;ty=e.clientY},{passive:true});
+      (function loop(){x+=(tx-x)*.12;y+=(ty-y)*.12;s.style.transform='translate('+(x-270)+'px,'+(y-270)+'px)';requestAnimationFrame(loop)})();
+    }
+    var els=[].slice.call(d.querySelectorAll('section .pcard, section .cwcard, section .dcard, .cwsechead, section.sec > .wrap > h2, section.dsec .dhead'));
+    els.forEach(function(el,i){el.classList.add('r11');el.dataset.r11i=i%8});
+    if('IntersectionObserver' in window){
+      var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){var el=en.target;el.style.transitionDelay=(+el.dataset.r11i*45)+'ms';el.classList.add('r11in');io.unobserve(el)}})},{threshold:.1,rootMargin:'0px 0px -40px 0px'});
+      els.forEach(function(el){io.observe(el)});
+    } else { els.forEach(function(el){el.classList.add('r11in')}) }
+    [].slice.call(d.querySelectorAll('.pcard,.cwcard,.dcard')).forEach(function(c){
+      c.addEventListener('pointermove',function(e){var r=c.getBoundingClientRect();c.style.setProperty('--mx',(e.clientX-r.left)+'px');c.style.setProperty('--my',(e.clientY-r.top)+'px')},{passive:true});
+    });
+  }
+  var nav=d.querySelector('nav');
+  function up(){if(nav)nav.classList.toggle('scrolled',scrollY>24)}
+  addEventListener('scroll',up,{passive:true});up();
+})();
+</script>
+
+</body></html>
