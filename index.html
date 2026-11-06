@@ -173,6 +173,20 @@ section{scroll-margin-top:96px}
 .flinks a:hover{transform:translateX(3px)}
 @media(prefers-reduced-motion:reduce){#ppro,.grad,.pill{animation:none}}
 
+
+/* pp12: scroll progress, magnetic CTAs, card tilt */
+#pp12bar{position:fixed;top:0;left:0;height:3px;width:0%;z-index:1200;
+  background:linear-gradient(90deg,#7c5cff,#00e0b8,#7c5cff);border-radius:0 2px 2px 0;
+  box-shadow:0 0 12px rgba(124,92,255,.55);transition:width .12s linear}
+.btn.mag{will-change:transform;transition:transform .18s ease,box-shadow .18s ease}
+.btn.mag:hover{box-shadow:0 10px 30px rgba(124,92,255,.35)}
+.dcard,.cwcard{transform-style:preserve-3d;transition:transform .25s ease}
+@media (prefers-reduced-motion: reduce){
+  #pp12bar{transition:none}
+  .btn.mag{transform:none!important}
+  .dcard,.cwcard{transform:none!important}
+}
+
 </style>
 <!-- premium pass 5 -->
 
@@ -653,6 +667,36 @@ targets.forEach(function(t){io.observe(t)});
   var nav=d.querySelector('nav');
   function up(){if(nav)nav.classList.toggle('scrolled',scrollY>24)}
   addEventListener('scroll',up,{passive:true});up();
+})();
+</script>
+
+
+<script>/* pp12 */
+(function(){
+  var bar=document.createElement('div');bar.id='pp12bar';document.body.appendChild(bar);
+  function onScroll(){var d=document.documentElement;var max=d.scrollHeight-d.clientHeight;
+    bar.style.width=(max>0?(d.scrollTop/max*100):0)+'%';}
+  addEventListener('scroll',onScroll,{passive:true});onScroll();
+  var fine=matchMedia('(pointer:fine)').matches,
+      calm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(fine&&!calm){
+    document.querySelectorAll('.btn').forEach(function(b){b.classList.add('mag');});
+    addEventListener('mousemove',function(e){
+      var t=e.target.closest('.btn.mag');
+      document.querySelectorAll('.btn.mag.lit').forEach(function(o){
+        if(o!==t){o.style.transform='';o.classList.remove('lit');}});
+      if(!t)return;
+      var r=t.getBoundingClientRect(),x=e.clientX-r.left-r.width/2,y=e.clientY-r.top-r.height/2;
+      t.classList.add('lit');
+      t.style.transform='translate('+x*.14+'px,'+y*.18+'px)';
+    },{passive:true});
+    document.querySelectorAll('.dcard,.cwcard').forEach(function(c){
+      c.addEventListener('mousemove',function(e){
+        var r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;
+        c.style.transform='perspective(900px) rotateX('+(-y*5)+'deg) rotateY('+(x*6)+'deg)';});
+      c.addEventListener('mouseleave',function(){c.style.transform='';});
+    });
+  }
 })();
 </script>
 
