@@ -187,6 +187,21 @@ section{scroll-margin-top:96px}
   .dcard,.cwcard{transform:none!important}
 }
 
+
+/* pp13: selection, scrollbar, anchor offsets, CTA shine */
+::selection{background:rgba(124,92,255,.38);color:#fff}
+::-webkit-scrollbar{width:10px}
+::-webkit-scrollbar-track{background:rgba(255,255,255,.03)}
+::-webkit-scrollbar-thumb{background:linear-gradient(180deg,#7c5cff,#00e0b8);border-radius:6px}
+::-webkit-scrollbar-thumb:hover{background:linear-gradient(180deg,#9b7fff,#2fe8cc)}
+section{scroll-margin-top:84px}
+.btn{position:relative;overflow:hidden}
+.btn::after{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;
+  background:linear-gradient(105deg,transparent,rgba(255,255,255,.28),transparent);
+  transform:skewX(-18deg);pointer-events:none;transition:left .55s ease}
+.btn:hover::after{left:130%}
+@media (prefers-reduced-motion: reduce){.btn::after{display:none}}
+
 </style>
 <!-- premium pass 5 -->
 
