@@ -71,6 +71,25 @@ section{scroll-margin-top:96px}
 #ppro{position:fixed;top:0;left:0;height:2.5px;width:0;z-index:99;
  background:linear-gradient(90deg,#6d5cff,#c86bff,#5cd6ff);box-shadow:0 0 12px rgba(124,92,255,.55)}
 
+
+/* Polish 33: micro-interaction layer */
+::selection{background:rgba(124,140,255,.35);color:#fff}
+img{animation:p33fade .9s cubic-bezier(.22,1,.36,1) both}
+@keyframes p33fade{from{opacity:0;transform:scale(1.02)}to{opacity:1;transform:none}}
+nav a,.nav a,header a{position:relative}
+nav a::after,.nav a::after,header a::after{content:"";position:absolute;left:0;bottom:-4px;height:1px;width:100%;background:currentColor;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.22,1,.36,1)}
+nav a:hover::after,.nav a:hover::after,header a:hover::after{transform:scaleX(1)}
+h1,h2{letter-spacing:-.02em}
+.btn,.button,a.btn{position:relative;overflow:hidden}
+.btn::before,.button::before,a.btn::before{content:"";position:absolute;top:0;left:-120%;width:60%;height:100%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-18deg);transition:left .6s cubic-bezier(.22,1,.36,1);pointer-events:none}
+.btn:hover::before,.button:hover::before,a.btn:hover::before{left:140%}
+footer{position:relative}
+footer::before{content:"";position:absolute;top:0;left:8%;right:8%;height:1px;background:linear-gradient(90deg,transparent,rgba(124,140,255,.5),transparent);pointer-events:none}
+:focus-visible{outline:2px solid rgba(124,140,255,.7);outline-offset:3px;border-radius:4px}
+.card,.project-card,.work-card{transition:transform .5s cubic-bezier(.22,1,.36,1),box-shadow .5s cubic-bezier(.22,1,.36,1)}
+.card:hover,.project-card:hover,.work-card:hover{box-shadow:0 24px 60px -24px rgba(0,0,0,.55)}
+@media (prefers-reduced-motion:reduce){img{animation:none}.btn::before,.button::before,a.btn::before{display:none}}
+
 </style><!-- premium pass 5 -->
 
 <style>
@@ -475,4 +494,5 @@ try{
 <script>/* Polish 31: back-to-top */
 (function(){var b=document.createElement('button');b.id='p31top';b.setAttribute('aria-label','Back to top');b.textContent='\u2191';document.body.appendChild(b);var t;b.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});window.addEventListener('scroll',function(){clearTimeout(t);t=setTimeout(function(){b.classList.toggle('show',window.scrollY>600)},120)},{passive:true});})();
 </script>
+<!-- Polish 33: micro-interaction layer (selection, nav underline, shine buttons, footer hairline, fade-in images, reduced-motion) -->
 </body></html>
