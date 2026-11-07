@@ -1100,5 +1100,40 @@ body::after{
   .hero h1, .hero .sub, .hero .cta-row, .hero .badge{ animation: none; }
   .card:hover, [class*="project-card"]:hover, .btn-primary:hover{ transform:none; }
 }
-</style>\n</body>
+</style>
+<style>
+/* polish28: animated stat counters, marquee strip, refined focus states */
+.stats strong{display:inline-block;min-width:2ch;font-variant-numeric:tabular-nums}
+.marquee{overflow:hidden;border-block:1px solid rgba(255,255,255,.07);background:rgba(255,255,255,.015);padding:18px 0;margin-top:44px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.marquee .track{display:flex;width:max-content;animation:fo-marquee 32s linear infinite}
+.marquee span{white-space:nowrap;font-size:clamp(.95rem,1.6vw,1.15rem);font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:rgba(245,246,255,.55);padding:0 18px}
+.marquee b{color:#8d7bff;font-weight:600}
+@keyframes fo-marquee{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.marquee .track{animation:none}}
+:focus-visible{outline:2px solid #8d7bff;outline-offset:3px;border-radius:2px}
+</style>
+<script>
+(function(){
+  var els=document.querySelectorAll('.stats .statin strong');
+  if('IntersectionObserver' in window && els.length){
+    var io=new IntersectionObserver(function(en){
+      en.forEach(function(e){
+        if(!e.isIntersecting)return;
+        io.unobserve(e.target);
+        var el=e.target,t=parseInt(el.textContent.replace(/[^0-9]/g,''),10)||0,st=null;
+        function step(ts){if(!st)st=ts;var p=Math.min((ts-st)/1400,1);p=1-Math.pow(1-p,3);el.textContent=String(Math.round(t*p));if(p<1)requestAnimationFrame(step);}
+        requestAnimationFrame(step);
+      });
+    },{threshold:.4});
+    els.forEach(function(el){io.observe(el)});
+  }
+  var m=document.createElement('div');m.className='marquee';m.setAttribute('aria-hidden','true');
+  var items=['Full Stack Development','AI Integrations','React & Next.js','Node.js APIs','Python / LLM Services','Mobile Apps','SaaS Builds','Dashboards & CRMs'];
+  var half=items.map(function(i){return '<span>'+i+'</span><b>&#10022;</b>'}).join('');
+  m.innerHTML='<div class="track">'+half+half+'</div>';
+  var stats=document.querySelector('section.stats');
+  if(stats&&stats.parentNode){stats.parentNode.insertBefore(m,stats.nextSibling);}else{document.body.appendChild(m);}
+})();
+</script>
+</body>
 </html>
