@@ -1505,6 +1505,15 @@ html{scroll-behavior:smooth}
 .btn-g:hover{border-color:rgba(167,139,250,.6);background:rgba(167,139,250,.08);color:#fff}
 .pill{border-color:rgba(141,110,255,.55);color:#d7c8ff;background:rgba(109,92,255,.14);font-size:.84rem}
 </style>
+<style id="polish43">
+/* polish 43: hero robustness fix - background image must never enter the flex flow and the headline must never overflow the viewport */
+.hero{justify-content:flex-start}
+.hero img.herobg{position:absolute !important;top:0;left:0;right:0;bottom:0;width:100%;height:100%;max-width:none}
+.hero .heroin{max-width:min(860px,100%) !important;margin-right:auto !important;width:100%}
+.hero h1{font-size:clamp(2.2rem,5vw,4.6rem) !important;max-width:min(16ch,100%);overflow-wrap:break-word}
+@media (max-width:640px){.hero h1{font-size:clamp(2rem,8.5vw,3rem) !important}}
+</style>
+
 <script src="premium-pass.js"></script>
 </body>
 </html>
