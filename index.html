@@ -574,11 +574,12 @@ section[id]{scroll-margin-top:84px}
 }
 </style>
 <style id="hero-clip-fix">
-/* fix: hero headline must never clip at the right edge */
-:root{--f-display:clamp(2.6rem,5vw,4.8rem)}
-.hero h1{overflow-wrap:break-word;text-wrap:balance}
-.hero .heroin{max-width:860px!important}
+.hero h1{overflow-wrap:break-word}
 body{overflow-x:hidden}
+</style>
+<style id="hero-layer-fix">
+/* root cause: header.hero>* forced the hero background layers into flex flow */
+header.hero>.aurora,header.hero>.herobg,header.hero>.herofade{position:absolute!important}
 </style>
 </head>
 <body>
