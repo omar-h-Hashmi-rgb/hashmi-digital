@@ -573,6 +573,13 @@ section[id]{scroll-margin-top:84px}
 .card:hover img{filter:saturate(1.08) brightness(1.04)}
 }
 </style>
+<style id="hero-clip-fix">
+/* fix: hero headline must never clip at the right edge */
+:root{--f-display:clamp(2.6rem,5vw,4.8rem)}
+.hero h1{overflow-wrap:break-word;text-wrap:balance}
+.hero .heroin{max-width:860px!important}
+body{overflow-x:hidden}
+</style>
 </head>
 <body>
 <nav class="nav" id="top">
